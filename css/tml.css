@@ -1,0 +1,731 @@
+@font-face {
+	font-family: 'oswald-regular';
+	src: url('../fonts/oswald/Oswald-Regular.ttf');
+}
+@font-face {
+	font-family: 'oswald-bold';
+	src: url('../fonts/oswald/Oswald-Bold.ttf');
+}
+@font-face {
+	font-family: 'oswald-light';
+	src: url('../fonts/oswald/Oswald-Light.ttf');
+}
+body, html {
+	background-color: #1cb9c5;
+	background-image: url('../assets/home/BG-texture.png');
+	overflow-x:hidden;
+}
+#wrapper {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+img { 
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+header {
+	height: 70px;
+	background-color: #333;
+	background-image: url('../assets/home/BG-texture.png');
+	z-index: 999 !important;
+}
+.main-navigator {
+	border-radius: 0px !important;
+	border: none !important;
+	background-color: transparent !important;
+	top: 5px;
+	background-color: #333;
+	z-index: 999 !important;
+}
+.navbar-collapse {
+	border: transparent !important;
+	background-color: #333;
+	background-image: url('../assets/home/BG-texture.png');
+	z-index: 999 !important;
+}
+.navbar-toggle {
+	background-color: #eee;
+	margin-top: 13px !important;
+}
+.navbar-toggle > .icon-bar {
+	color: #fff !important;
+}
+.spacer {
+	width: 50%;
+}
+.logo {
+	background-image: url('../assets/home/logo.png');
+	background-position: 5px 5px; 
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 60px;
+	background-size: 40px;
+	margin-left: 10px;
+}
+.elsa-link {
+	font-size: 17px;
+	color: #fff !important;
+	font-family: 'oswald-regular', sans-serif;
+	margin-top: 4px;
+}
+.main-banner {
+	width: 100%;
+	position: relative;
+	top: -70px;
+	z-index: 0;
+}
+.new-lawyer-btn, .practicing-lawyer-btn {
+	top: -55px;
+	position: relative;
+}
+.new-lawyer-btn {
+	font-family: 'oswald-regular', sans-serif;
+	font-weight: bold;
+	background-color: #0F656C;
+	color: #fff;
+	font-size: 18px;
+	padding: 11px 22px 11px 22px;
+	border: 5px solid #0F5165;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+.practicing-lawyer-btn {
+	font-family: 'oswald-regular', sans-serif;
+	font-weight: bold;
+	background-color: #E6A500;
+	color: #fff;
+	font-size: 18px;
+	padding: 11px 22px 11px 22px;
+	border: 5px solid #D59000;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+.new-lawyer-btn:hover {
+	border: 5px solid #0F656C;
+	text-decoration: none;
+	background-color: #0F5165;
+	color: #fff;
+}
+.practicing-lawyer-btn:hover {
+	border: 5px solid #E6A500;
+	text-decoration: none;
+	background-color: #D59000;
+	color: #fff;
+}
+
+.new-lawyer-btn, .practicing-lawyer-btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.new-lawyer-btn:hover, .new-lawyer-btn:focus, .new-lawyer-btn:active, 
+.practicing-lawyer-btn:hover,.practicing-lawyer-btn:focus, .practicing-lawyer-btn:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.col-md-6 {
+	text-align: center !important;
+}
+.pl, .nl {
+	width: 140px;
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
+.main-title {
+	font-family: 'oswald-regular', sans-serif;
+	font-size: 45px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+}
+.normal-text {
+	font-family: 'oswald-light', sans-serif;
+}
+/*Media Query*/
+
+@media all and (orientation:portrait) {
+	.main-banner {
+		width: 160%;
+		left: -30%;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+	.main-title {
+		font-size: 50px;
+	}
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.main-title {
+		font-size: 45px;
+	}
+	.main-banner {
+		top: -55px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.row .col-md-6 {
+		margin-top: -40px;
+		width: 50%;
+	}
+	.row .col-md-6:nth-child(1) {
+		float: left;
+	}
+	.row .col-md-6:nth-child(2) {
+		float: right;
+	}
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+	.main-title {
+		font-size: 40px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	.main-title {
+		font-size: 35px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+	.main-title {
+		font-size: 40px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+	.main-title {
+		font-size: 35px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+
+	.main-title {
+		font-size: 40px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+	.main-title {
+		font-size: 35px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+	.main-title {
+		font-size: 40px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+	.main-title {
+		font-size: 35px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+
+	.main-title {
+		font-size: 40px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+	.main-title {
+		font-size: 30px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+	.main-title {
+		font-size: 40px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+	.main-title {
+		font-size: 30px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+
+	.main-title {
+		font-size: 40px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+	.main-title {
+		font-size: 30px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+/* Nokia Phones ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 1){
+
+	.main-title {
+		font-size: 40px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 1){
+	.main-title {
+		font-size: 30px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+/* Nokia Lumia ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 533px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 1.4){
+
+	.main-title {
+		font-size: 40px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 533px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 1.4){
+	.main-title {
+		font-size: 30px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+/* LG  ----------- */
+@media only screen and (min-device-width: 384px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 1.25){
+
+	.main-title {
+		font-size: 40px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+
+}
+
+@media only screen and (min-device-width: 384px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 1.25){
+	.main-title {
+		font-size: 30px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+
+/* Google Nexus 7  ----------- */
+@media only screen and (min-device-width: 600px) and (max-device-height: 960px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+
+	.main-title {
+		font-size: 50px;
+	}
+	.main-banner {
+		top: -40px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-height: 960px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+	.main-title {
+		font-size: 50px;
+	}
+	.main-banner {
+		top: -40px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+
+/* Google Nexus 6  ----------- */
+@media only screen and (min-device-width: 387px) and (max-device-height: 690px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3.5){
+
+	.main-title {
+		font-size: 35px;
+	}
+	.main-banner {
+		top: -40px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+
+}
+
+@media only screen and (min-device-width: 412px) and (max-device-height: 659px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3.5){
+	.main-title {
+		font-size: 35px;
+	}
+	.main-banner {
+		top: -40px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+	.main-title {
+		font-size: 40px;
+	}
+	.main-banner {
+		top: -40px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+}
+
+@media only screen and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+	.main-title {
+		font-size: 35px;
+	}
+	.main-banner {
+		top: -35px;
+	}
+	.pl, .nl {
+		width: 100px;
+	}
+	.new-lawyer-btn, .practicing-lawyer-btn {
+		padding: 5px 15px 5px 15px;
+		top: -45px;
+	}
+	.col-md-6 {
+		margin-top: -40px;
+	}
+}

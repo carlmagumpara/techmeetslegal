@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+body {
+	background-color: #1cb9c5;
+	background-image: url('../assets/home/BG-texture.png');
+}
+* { 
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+header {
+	height: 70px;
+	background-color: #333;
+	background-image: url('../assets/home/BG-texture.png');
+	z-index: 999 !important;
+}
+.main-navigator {
+	border-radius: 0px !important;
+	border: none !important;
+	background-color: transparent !important;
+	top: 5px;
+	background-color: #333;
+	z-index: 999 !important;
+}
+.navbar-collapse {
+	border: transparent !important;
+	background-color: #333;
+	background-image: url('../assets/home/BG-texture.png');
+	z-index: 999 !important;
+}
+.navbar-toggle {
+	background-color: #eee;
+	margin-top: 13px !important;
+}
+.navbar-toggle > .icon-bar {
+	color: #fff !important;
+}
+.spacer {
+	width: 50%;
+}
+.logo {
+	background-image: url('../assets/home/logo.png');
+	background-position: 5px 5px; 
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 60px;
+	background-size: 40px;
+}
+.elsa-link {
+	font-size: 17px;
+	color: #fff !important;
+	font-family: 'Oswald', sans-serif;
+	margin-top: 4px;
+}
+.d2-1 {
+	margin-top: 80px;
+	height: 350px;
+}
+.banner-watermark {
+	width: 90%;
+	left: 5%;
+	position: absolute;
+}
+.banner {
+	width: 55%;
+	left: 22.5%;
+	top: 70px;
+	position: absolute;
+}
+.main-title {
+	font-family: 'Oswald', sans-serif;
+	font-size: 45px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	top: -50px;
+}
+.normal-text {
+	font-weight: 400 !important;
+}
+.d2-2 {
+	height: 270px;
+}
+.new-lawyer, .practicing-lawyer {
+	width: 130px;
+	height: 250px;
+	background-size: 1200px;
+}
+.new-lawyer {
+	background-image: url('../assets/home/home.png');
+	background-position: -50px 0px; 
+}
+.practicing-lawyer {
+	background-image: url('../assets/home/home.png');
+	background-position: -210px 0px;
+}
+.col-centered{
+    margin: 0 auto;
+    float: none;
+}
+.new-lawyer-btn {
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	background-color: #0F656C;
+	color: #fff;
+	font-size: 18px;
+	padding: 11px 22px 11px 22px;
+	border: 5px solid #0F5165;
+  text-decoration: none;
+  top: -77px;
+  position: relative;
+  cursor: pointer;
+}
+.practicing-lawyer-btn {
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	background-color: #E6A500;
+	color: #fff;
+	font-size: 18px;
+	padding: 11px 22px 11px 22px;
+	border: 5px solid #D59000;
+  text-decoration: none;
+  top: -77px;
+  position: relative;
+  cursor: pointer;
+}
+.new-lawyer-btn:hover {
+	border: 5px solid #0F656C;
+	text-decoration: none;
+	background-color: #0F5165;
+	color: #fff;
+}
+.practicing-lawyer-btn:hover {
+	border: 5px solid #E6A500;
+	text-decoration: none;
+	background-color: #D59000;
+	color: #fff;
+}
+
+.new-lawyer-btn, .practicing-lawyer-btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.new-lawyer-btn:hover, .new-lawyer-btn:focus, .new-lawyer-btn:active, 
+.practicing-lawyer-btn:hover,.practicing-lawyer-btn:focus, .practicing-lawyer-btn:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/*Media Query*/
+
+@media (max-width: 736px) {
+	.spacer {
+		width: 100%;
+	}
+	.main-title {
+		font-size: 30px;
+		top: -60px;
+	}
+	.banner-watermark {
+		width: 90%;
+		left: 5%;
+		position: absolute;
+		top: -20px;
+	}
+	.banner {
+		width: 55%;
+		left: 22.5%;
+		top: 30px;
+	}
+	.d2-1 {
+		margin-top: 80px;
+		height: 130px;
+	}
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

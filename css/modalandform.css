@@ -1,0 +1,282 @@
+.form {
+	background-image: url('../assets/new_lawyer/twelveth-slide/termscondition-background-1.png');
+	background-size: 100% 100%;
+	height: auto;
+	top: 40px;
+	width: 500px;
+	left: 50%;
+	margin-left: -225px;
+	padding: 25px 35px 15px 35px;
+}
+.main-form {
+	margin-top: 20px;
+}
+.main-form-label {
+	font-size: 18px;
+	color: #fff;
+	text-align: left !important;
+}
+.main-form-input, .main-form-text-area {
+	border-radius: 0px !important;
+	float: right;
+	border: 5px solid #0F656C;
+	height: 47px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #0F656C;
+}
+.form-group {
+	margin-top: 20px;
+}
+.submit-button, .submit-button-terms {
+	padding: 0px !important;
+	border-radius: 0px !important;
+	width: 100px;
+	height: 50px;
+	background-color: transparent !important;
+	border-radius: none !important;
+	background-image: url('../assets/new_lawyer/twelveth-slide/submit-1.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border: 0;
+	float: right;
+}
+.submit-button:hover, .submit-button-terms:hover {
+	background-image: url('../assets/new_lawyer/twelveth-slide/submit.png');
+}
+.submit-button, .submit-button-terms {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.submit-button:hover, .submit-button:focus, .submit-button:active,
+.submit-button-termsn:hover, .submit-button-terms:focus, .submit-button-terms:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.terms {
+	text-align: left;
+	font-size: 11.5px;
+	font-weight: bold;
+}
+.terms-link {
+	color: #0F656C;
+	text-decoration: none !important;
+	font-weight: bold;
+}
+.error {
+	border: 5px solid #D00000 !important;
+}
+.help-block {
+	color: #fff;
+	position: absolute;
+	bottom: -30px;
+}
+.form-2 {
+	background-image: url('../assets/new_lawyer/twelveth-slide/termscondition-background.png');
+	background-size: 100% 100%;
+	top: 50px;
+	width: 500px;
+	left: 50%;
+	margin-left: -225px;
+	padding: 35px 20px 30px 20px;
+	position: absolute;
+}
+.trial {
+	position: absolute;
+	top: -27px;
+	left: -17px;
+	width: 400px;
+}
+.close-form {
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	cursor: pointer;
+}
+.close {
+	z-index: 999;
+	width: 40px;
+	height: 40px;
+	right: -10px;
+	top: -15px;
+	position: absolute;
+	opacity: 1 !important;
+}
+.scroll-pane {
+	width: 100% !important;
+	overflow-y:scroll;
+	height: 550px;
+}
+.scroll-pane::-webkit-scrollbar{
+	width:16px;
+	background-color: #1cb9c5;
+} 
+.scroll-pane::-webkit-scrollbar-thumb{
+	background-color: #115F6C;
+}
+.scroll-pane::-webkit-scrollbar-thumb:hover{
+	background-color: #115F6C;
+}
+.scroll-pane::-webkit-scrollbar-thumb:active{
+	background-color: #115F6C;
+}
+.modal-backdrop {
+  opacity: 0 !important;
+} 
+.scroll-pane {
+	background-color: #fff;
+	padding: 20px;
+	vertical-align: middle;
+}
+.scroll-pane p {
+	font-family: arial;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+}
+.scroll-pane h3 {
+	color: #115F6C;
+	font-weight: bold;
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+.scroll-pane h4 {
+	font-size: 16px;
+	color: #115F6C;
+	font-weight: bold;
+}
+.pop-up-content-2 {
+  height: auto !important;
+  min-height: 100% !important;
+  border-radius: 0 !important;
+  background: transparent;
+  background-color: transparent; 
+}
+.loading {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 9999999999999;
+	background-color: #1cb9c5;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-texture.png');
+}
+.loader, .rotate {
+    margin-top: 20%;
+    width: 100%;
+}
+.loader img {
+	width: 80px;
+	height: 80px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loader h2 {
+	color: #fff;
+	text-align: center;
+}
+.rotateyourdevice {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 999999999999;
+	background-color: #1cb9c5;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-texture.png');
+	display: none;
+}
+.rotate img {
+	width: 300px;
+	height: 200px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rotate h2 {
+	color: #fff;
+	text-align: center;
+}
+.first-col {
+	width: 50%;
+	float: left;
+	padding: 10px;
+}
+.second-col {
+	width: 50%;
+	float: right;
+	padding: 10px;
+}
+
+.item {
+	padding: 20px;
+	width: 100% !important;
+	height: 100% !important;
+	position: relative;
+	margin-top: 20px;
+}
+.item p {
+	font-family: arial;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	line-height: 30px;
+}
+.item h3 {
+	color: #115F6C;
+	font-weight: bold;
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 25px;
+}
+.item h4 {
+	font-size: 16px;
+	color: #115F6C;
+	font-weight: bold;
+}
+input {
+    -webkit-user-select: auto !important;
+}
+.phone-meter-box {
+	position: relative;
+	width: 1000px;
+	height: 470px;
+	margin: 0 auto;
+	border: 3px solid red;
+	top: 110px;
+}
+.phone-meter {
+	position: relative;
+	width: 1px;
+	height: 100%;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+.controls {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+#radio-terms {
+	width: 20px;
+	height: 20px;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    -ms-appearance: checkbox;
+    -o-appearance: checkbox;
+}
+.terms-label {
+	font-size: 18px;
+	vertical-align: bottom;
+	margin-left: 5px;
+}

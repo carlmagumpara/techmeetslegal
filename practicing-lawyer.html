@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="no-skrollr">
+    <title>TECHNOLOGY meets LEGAL</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="description" content="A smart system that empowers lawyers and law offices to monitor their day-to-day activities.">
+  <meta name="keywords" content="E-Law Solutions,ELSA APP, A smart system that empowers lawyers and law offices to monitor their day-to-day activities.">
+  <meta name="author" content="ELSA DEV, Carl Anthony Oro Magumpara">
+    <link rel="shortcut icon" href="assets/logo.ico">
+    <link href="css/normalize.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <link href="css/fixed-positioning.css" rel="stylesheet" media="screen">
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+    <link href="css/practicinglawyer.css" rel="stylesheet" media="screen">
+    <link href="css/default.css" rel="stylesheet" media="screen">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+  <body onload="writeToFrame();">
+    <!--  Orientation Detect  -->
+    <div class="rotateyourdevice2">
+      <div class="dim-bg">
+        <div class="rotate">
+          <img src="assets/icon-horizontal.png">
+          <h1> Please rotate your device. </h1>
+        </div>
+      </div>
+    </div>
+    <div class="skrollr-body" id="skrollr-body">
+    <!-- Loading -->
+    <div class="loading">
+      <div class="loader">
+        <img src="assets/ELSA_Preloader_v2.gif">
+        <h2> Loading... </h2>
+      </div>
+    </div>
+    <!-- Submit Loading -->
+    <div class="submit-loading">
+      <div class="loader">
+        <img src="assets/ELSA_Preloader_v2.gif">
+        <h2> Please Wait... </h2>
+      </div>
+    </div>
+    <!-- Main Content -->
+    <div class="content">
+      <div class="BG-1 skrollable"
+      data-0="display: block;"
+      data-3700="display: none;"></div>
+      <div class="BG-2 skrollable"
+      data-0="display: none;"
+      data-3600="display: block; opacity: 0;"
+      data-3701="display: block; opacity: 1;"
+      data-8700="display: block; top: 0%;"
+      data-9000="display: block; top: -100%;"></div>
+      <div class="BG-3 skrollable"
+      data-0="display: none;"
+      data-8700="display: block; top: 100%;"
+      data-9000="display: block; top: 0%;"
+      data-30000="display: block; opacity: 1;"
+      data-30100="display: block; opacity: 0;"></div>
+      <div class="BG-4 skrollable"
+      data-0="display: none;"
+      data-30000="display: block; opacity: 0;"
+      data-30100="display: block; opacity: 1;"
+      data-31000="display: block; bottom: 0%;"
+      data-31200="display: block; bottom: 100%;"></div>
+      <div class="BG-5 skrollable"
+      data-0="display: none;"
+      data-31000="display: block; bottom: -100%;"
+      data-31200="display: block; bottom: 0%;"></div>
+      <div class="scene" data-end="display: block;">
+        <div class="main-container">
+          <div class="hide-on-desktop"> 
+            <img src="assets/swipe-up-2.png"
+            data-0="display: block; opacity: 1;" 
+            data-2000="opacity: 0;" 
+            data-2001="display: none;" 
+            class="swipe-next">
+            <img src="assets/swipe-up-3.png"
+            data-0="display: block; opacity: 0;" 
+            data-2000="opacity: 1;"
+            data-3700="display: none;"
+            class="swipe-next-wt">
+            <img src="assets/swipe-up-5.png"
+            data-0="display: none;" 
+            data-3700="display: block;"
+            data-7900="display: none;"
+            class="swipe-next-wt">
+            <img src="assets/swipe-up-3.png"
+            data-0="display: none;" 
+            data-7900="display: block;"
+            data-30100="display: none;"
+            class="swipe-next-wt">
+            <img src="assets/swipe-up-4.png"
+            data-0="display: none;" 
+            data-30100="display: block;"
+            data-31199="display: none;"
+            class="swipe-next-wt">
+          </div>
+          <div class="next-button">
+            <span id="next-gray" class="scene-1 bounceInUp animated" 
+            data-0="display: none;" 
+            data-1199="display: block;"
+            data-3200="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-2" 
+            data-0="display: none;"
+            data-3200="display: block;"
+            data-3700="display: none;"
+            ></span>
+            <span id="next-green" class="scene-3" 
+            data-0="display: none;"
+            data-3700="display: block;"
+            data-4099="display: none;"
+            ></span>
+            <span id="next-green" class="scene-4" 
+            data-0="display: none;"
+            data-4099="display: block;"
+            data-4599="display: none;"
+            ></span>
+            <span id="next-green" class="scene-5" 
+            data-0="display: none;"
+            data-4599="display: block;"
+            data-5099="display: none;"
+            ></span>
+            <span id="next-green" class="scene-6" 
+            data-0="display: none;"
+            data-5099="display: block;"
+            data-5599="display: none;"
+            ></span>
+            <span id="next-green" class="scene-7" 
+            data-0="display: none;"
+            data-5599="display: block;"
+            data-6099="display: none;"
+            ></span>
+            <span id="next-green" class="scene-8" 
+            data-0="display: none;"
+            data-6099="display: block;"
+            data-6599="display: none;"
+            ></span>
+            <span id="next-green" class="scene-9" 
+            data-0="display: none;"
+            data-6599="display: block;"
+            data-7099="display: none;"
+            ></span>
+            <span id="next-green" class="scene-10" 
+            data-0="display: none;"
+            data-7099="display: block;"
+            data-7900="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-11" 
+            data-0="display: none;"
+            data-7900="display: block;"
+            data-8200="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-12" 
+            data-0="display: none;"
+            data-8200="display: block;"
+            data-9499="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-13" 
+            data-0="display: none;"
+            data-9499="display: block;"
+            data-11199="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-14" 
+            data-0="display: none;"
+            data-11199="display: block;"
+            data-12099="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-15" 
+            data-0="display: none;"
+            data-12099="display: block;"
+            data-12999="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-16" 
+            data-0="display: none;"
+            data-12999="display: block;"
+            data-14600="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-17" 
+            data-0="display: none;"
+            data-14600="display: block;"
+            data-15400="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-18" 
+            data-0="display: none;"
+            data-15400="display: block;"
+            data-15900="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-19" 
+            data-0="display: none;"
+            data-15900="display: block;"
+            data-16500="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-20" 
+            data-0="display: none;"
+            data-16500="display: block;"
+            data-17100="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-21" 
+            data-0="display: none;"
+            data-17100="display: block;"
+            data-17700="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-22" 
+            data-0="display: none;"
+            data-17700="display: block;"
+            data-18300="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-23" 
+            data-0="display: none;"
+            data-18300="display: block;"
+            data-18900="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-24" 
+            data-0="display: none;"
+            data-18900="display: block;"
+            data-19500="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-25" 
+            data-0="display: none;"
+            data-19500="display: block;"
+            data-20100="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-26" 
+            data-0="display: none;"
+            data-20100="display: block;"
+            data-20901="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-27" 
+            data-0="display: none;"
+            data-20901="display: block;"
+            data-21600="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-28" 
+            data-0="display: none;"
+            data-21600="display: block;"
+            data-22200="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-29" 
+            data-0="display: none;"
+            data-22200="display: block;"
+            data-22800="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-30" 
+            data-0="display: none;"
+            data-22800="display: block;"
+            data-23300="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-31" 
+            data-0="display: none;"
+            data-23300="display: block;"
+            data-23900="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-32" 
+            data-0="display: none;"
+            data-23900="display: block;"
+            data-24500="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-33" 
+            data-0="display: none;"
+            data-24500="display: block;"
+            data-25200="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-34" 
+            data-0="display: none;"
+            data-25200="display: block;"
+            data-25600="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-35" 
+            data-0="display: none;"
+            data-25600="display: block;"
+            data-26500="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-36" 
+            data-0="display: none;"
+            data-26500="display: block;"
+            data-27400="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-37" 
+            data-0="display: none;"
+            data-27400="display: block;"
+            data-28800="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-38" 
+            data-0="display: none;"
+            data-28800="display: block;"
+            data-29501="display: none;"
+            ></span>
+            <span id="next-gray" class="scene-39" 
+            data-0="display: none;"
+            data-29501="display: block;"
+            data-30100="display: none;"
+            ></span>
+            <span id="next-yellow" class="scene-40" 
+            data-0="display: none;"
+            data-30100="display: block;"
+            data-31199="display: none;"
+            ></span>
+            <span id="back" class=""
+            data-31198="display: none;"
+            data-31199="display: block;"
+            ></span>
+          </div>
+          <img src="assets/practicing_lawyer/PL01/PL01-YoureLawyer.png" class="PL01-YoureLawyer bounceIn animated"
+          data-0="display: block;   top: 140px;"
+          data-1600="top: 140px;"
+          data-1800="top: -1000px;"
+          data-1801="display: none;">
+          <img src="assets/practicing_lawyer/PL01/PL01-Table.png" class="PL01-Table bounceInUp animated"
+          data-0="display: block; left: 340px;"
+          data-1600="display: block; left: 340px;"
+          data-1800="display: block; left: 1500px;"
+          data-1801="display: none;">
+          <img src="assets/practicing_lawyer/PL01/PL01-PLawyer.png" class="PL01-PLawyer"
+          data-0="display: block;"
+          data-1800="display: block; opacity: 1;"
+          data-1900="opacity: 0;">
+          <img src="assets/practicing_lawyer/PL01/PL01-Calendar1.png" class="PL01-Calendar bounceIn animated"
+          data-0="display: block;   top: 160px; left: 210px;"
+          data-400="top: 160px;"
+          data-600="top: -1000px;"
+          data-1801="display: none;">
+          <img src="assets/practicing_lawyer/PL01/PL01-Calendar2.png" class="PL01-Calendar"
+          data-0="display: block;   top: 160px; "
+          data-200="left: -1000px;"
+          data-400="left: 210px; "
+          data-600="top: 160px; "
+          data-800="top: -1000px;"
+          data-1801="display: none;">
+          <img src="assets/practicing_lawyer/PL01/PL01-Calendar3.png" class="PL01-Calendar"
+          data-0="display: block;   top: 160px; "
+          data-400="left: -1000px;"
+          data-600="left: 210px; "
+          data-800=" top: 160px; "
+          data-1000="top: -1000px;"
+          data-1801="display: none;">
+          <img src="assets/practicing_lawyer/PL01/PL01-Calendar4.png" class="PL01-Calendar"
+          data-0="display: block;   top: 160px; "
+          data-600="left: -1000px;"
+          data-800="left: 210px; "
+          data-1000="top: 160px; "
+          data-1200="top: -1000px;"
+          data-1801="display: none;">
+          <img src="assets/practicing_lawyer/PL01/PL01-Calendar5.png" class="PL01-Calendar"
+          data-0="display: block;   top: 160px; "
+          data-800="left: -1000px;"
+          data-1000="left: 210px; "
+          data-1200="left: 210px;"
+          data-1600="left: 210px;"
+          data-1800="left: -1000px;"
+          data-1801="display: none;">
+          <div class="ofc-floor"
+          data-0="display: block;"
+          data-3600="display: block; opacity: 1;"
+          data-3700="display: block; opacity: 0;"
+          data-3701="display: none;"></div>
+          <img src="assets/practicing_lawyer/PL02/PL02-PLawyer2.png" class="PL02-PLawyer1"
+          data-2599="display: none;"
+          data-2600="display: block;"
+          data-3800="display: none;">
+          <img src="assets/practicing_lawyer/PL02/PL02-BuildTrust.png" class="PL02-BuildTrust bounceIn animated"
+          data-2299="display: none;"
+          data-2300="display: block;"
+          data-3800="display: none;">
+          <img src="assets/practicing_lawyer/PL02/PL02-Client1.png" class="Client1 fadeIn animated"
+          data-2499="display: none;"
+          data-2500="display: block; left: 1500px;"
+          data-2600="display: block; left: 320px;"
+          data-3600="display: block; opacity: 1;"
+          data-3800="display: none; opacity: 0;">
+          <img src="assets/practicing_lawyer/PL02/PL02-Client2.png" class="Client2 fadeIn animated"
+          data-2899="display: none;"
+          data-2900="display: block;"
+          data-3600="display: block; opacity: 1;"
+          data-3800="display: none; opacity: 0;">
+          <img src="assets/practicing_lawyer/PL02/PL02-Client3.png" class="Client3 fadeIn animated"
+          data-3199="display: none;"
+          data-3200="display: block;"
+          data-3600="display: block; opacity: 1;"
+          data-3800="display: none; opacity: 0;">
+          <img src="assets/practicing_lawyer/PL02/PL02-PLawyer1.png" class="PL02-PLawyer1"
+          data-1899="display: none;"
+          data-1900="display: block;"
+          data-2600="display: none;"
+          data-3700="display: block;"
+          data-7700="display: block; opacity: 1;"
+          data-7800="display: block; opacity: 0;">
+          <img src="assets/practicing_lawyer/PL03/PL03-Youwant.png" class="PL03-Youwant bounceIn animated"
+          data-3800="display: none;"
+          data-4000="display: block;"
+          data-7700="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-Freedom.png" class="
+          PL03-Circle"
+          data-3999="display: none;"
+          data-4000="display: block; left: 1500px;"
+          data-4100="left: 500px; top: 290px;"
+          data-4500="left: 500px; top: 290px;"
+          data-4600="left: 500px; top: -1000px;"
+          data-4601="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-Freedom-text.png" class="
+          PL03-Text"
+          data-3999="display: none;"
+          data-4000="display: block; top: 1500px; left: 430px;"
+          data-4100="top: 430px;"
+          data-4500="top: 430px;"
+          data-4600="top: -1000px;"
+          data-4601="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-Lifestyle.png" class="
+          PL03-Circle"
+          data-4499="display: none;"
+          data-4500="display: block; left: 1500px;"
+          data-4600="left: 500px; top: 290px;"
+          data-5000="left: 500px; top: 290px;"
+          data-5100="left: 500px; top: -1000px;"
+          data-5101="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-Lifestyle-text.png" class="
+          PL03-Text"
+          data-4499="display: none;"
+          data-4500="display: block; top: 1500px; left: 460px;"
+          data-4600="top: 430px;"
+          data-5000="top: 430px;"
+          data-5100="top: -1000px;"
+          data-5101="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-Ownboss.png" class="
+          PL03-Circle"
+          data-4999="display: none;"
+          data-5000="display: block; left: 1500px;"
+          data-5100="left: 500px; top: 290px;"
+          data-5500="left: 500px; top: 290px;"
+          data-5600="left: 500px; top: -1000px;"
+          data-5601="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-Ownboss-text.png" class="
+          PL03-Text"
+          data-4999="display: none;"
+          data-5000="display: block; top: 1500px; left: 460px;"
+          data-5100="top: 430px;"
+          data-5500="top: 430px;"
+          data-5600="top: -1000px;"
+          data-5601="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-ProvideJobs.png" class="
+          PL03-Circle"
+          data-5499="display: none;"
+          data-5500="display: block; left: 1500px;"
+          data-5600="left: 500px; top: 290px;"
+          data-6000="left: 500px; top: 290px;"
+          data-6100="left: 500px; top: -1000px;"
+          data-6101="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-ProvideJobs-text.png" class="
+          PL03-Text"
+          data-5499="display: none;"
+          data-5500="display: block; top: 1500px; left: 450px;"
+          data-5600="top: 430px;"
+          data-6000="top: 430px;"
+          data-6100="top: -1000px;"
+          data-6101="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-EarnMoney.png" class="
+          PL03-Circle"
+          data-5999="display: none;"
+          data-6000="display: block; left: 1500px;"
+          data-6100="left: 500px; top: 290px;"
+          data-6500="left: 500px; top: 290px;"
+          data-6600="left: 500px; top: -1000px;"
+          data-6601="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-EarnMoney-text.png" class="
+          PL03-Text"
+          data-5999="display: none;"
+          data-6000="display: block; top: 1500px; left: 460px;"
+          data-6100="top: 430px;"
+          data-6500="top: 430px;"
+          data-6600="top: -1000px;"
+          data-6601="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-Industry.png" class="
+          PL03-Circle"
+          data-6499="display: none;"
+          data-6500="display: block; left: 1500px;"
+          data-6600="left: 500px; top: 290px;"
+          data-7000="left: 500px; top: 290px;"
+          data-7100="left: 500px; top: -1000px;"
+          data-7101="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-Industry-text.png" class="
+          PL03-Text"
+          data-6499="display: none;"
+          data-6500="display: block; top: 1500px; left: 420px;"
+          data-6600="top: 430px;"
+          data-7000="top: 430px;"
+          data-7100="top: -1000px;"
+          data-7101="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-Difference.png" class="
+          PL03-Circle"
+          data-6999="display: none;"
+          data-7000="display: block; left: 1500px;"
+          data-7100="left: 500px; top: 290px;"
+          data-7500="left: 500px; top: 290px;"
+          data-7700="opacity: 1;"
+          data-7800="opacity: 0;"
+          data-7801="display: none;">
+          <img src="assets/practicing_lawyer/PL03/PL03-Difference-text.png" class="
+          PL03-Text"
+          data-6999="display: none;"
+          data-7000="display: block; top: 1500px; left: 430px;"
+          data-7100="top: 430px;"
+          data-7500="top: 430px;"
+          data-7700="opacity: 1;"
+          data-7800="opacity: 0;"
+          data-7801="display: none;">
+          <img src="assets/new_lawyer/third-slide/building-transparent.png" class="building-transparent"
+          data-7699="display: none;"
+          data-7700="display: block; top: 1500px;"
+          data-7900="top: 275px;"
+          data-8700="top: 275px;"
+          data-9000="top: -1000px;"
+          data-9001="display: none;">
+          <img src="assets/new_lawyer/third-slide/building-transparent-1.png" class="building-transparent-1"
+          data-7699="display: none;"
+          data-7700="display: block; top: 1500px;"
+          data-7900="top: 385px;"
+          data-8700="top: 385px;"
+          data-9000="top: -1000px;"
+          data-9001="display: none;">
+          <img src="assets/new_lawyer/third-slide/building-1.png" class="building-1"
+          data-7699="display: none;"
+          data-7700="display: block; top: 220px; left: 1500px;"
+          data-7900="top: 220px; left: 560px;"
+          data-8700="top: 220px;"
+          data-9000="top: -1000px;"
+          data-9001="display: none;">
+          <div class="road"
+          data-7699="display: none;"
+          data-7700="display: block; top: 1500px;"
+          data-7900="top: 500px;"
+          data-8700="top: 500px;"
+          data-9000="top: -100px;"
+          data-9001="display: none;"></div>
+          <img src="assets/practicing_lawyer/PL04/PL04-Pride.png" class="PL04-Pride flipInX animated"
+          data-7699="display: none;"
+          data-7900="display: block; left: 550px; top: 130px;"
+          data-8700="top: 130px;"
+          data-9000="top: -1000px;"
+          data-9001="display: none;">
+          <img src="assets/practicing_lawyer/PL04/PL04-PLawyer1.png" class="PL04-PLawyer1"
+          data-7699="display: none;"
+          data-7700="display: block; opacity: 0;"
+          data-7800="display: block; opacity: 1;"
+          data-8200="display: none;">
+          <img src="assets/practicing_lawyer/PL04/PL04-HowtoStart.png" class="PL04-HowtoStart bounceIn animated"
+          data-8199="display: none;"
+          data-8200="display: block; top: 200px;"
+          data-8700="display: block; top: 200px;"
+          data-9000="display: block; top: -1000px;">
+          <div class="ofc-floor"
+          data-0="display: block;"
+          data-8700="display: block; top: 2000px;"
+          data-9000="display: block; top: 400px;"
+          data-14099="display: block; top: 400px;"
+          data-14100="display: block; top: 500px;"
+          data-15400="display: block; top: 500px;"
+          data-30000="display: block; opacity: 1;"
+          data-30100="display: block; opacity: 0;"></div>
+          <img src="assets/practicing_lawyer/PL06/PL06-getpartner.png" class="PL06-getpartner flipInX animated"
+          data-9199="display: none;"
+          data-9200="display: block;"
+          data-10200="display: none;">
+          <img src="assets/practicing_lawyer/PL05/PL05-PLawyer2.png" class="PL04-PLawyer2"
+          data-9199="display: none;"
+          data-9400="display: block; top: 250px;"
+          data-9900="display: none;">
+          <img src="assets/practicing_lawyer/PL07/PL07-Partner2.png" class="PL07-Partner2"
+          data-9299="display: none;"
+          data-9300="display: block; left: 1500px;"
+          data-9500="display: block; left: 530px;"
+          data-9900="display: none;">
+          <img src="assets/practicing_lawyer/PL07/PL07-Partner1.png" class="PL07-Partner1"
+          data-9899="display: none;"
+          data-9900="display: block; left: 550px;"
+          data-14000="opacity: 1;"
+          data-14100="opacity: 0;">
+          <img src="assets/practicing_lawyer/PL04/PL04-PLawyer2.png" class="PL04-PLawyer2"
+          data-8199="display: none;"
+          data-8200="display: block; top: 320px;"
+          data-8700="top: 320px;"
+          data-9000="top: 250px;"
+          data-9400="display: none;"
+          data-9900="display: block;"
+          data-10600="display: block; left: 450px;"
+          data-10700="display: block; left: 300px;"
+          data-14000="opacity: 1;"
+          data-14100="opacity: 0;">
+          <img src="assets/practicing_lawyer/PL06/PL06-getoffice.png" class="PL06-getoffice flipInX animated"
+          data-10399="display: none;"
+          data-10400="display: block;"
+          data-11500="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-table1.png" class="PL06-table1"
+          data-10999="display: none;"
+          data-11000="display: block; left: -1000px;"
+          data-11200="left: 200px;"
+          data-13500="left: 200px;"
+          data-13700="left: -1000px;"
+          data-13701="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-table2.png" class="PL06-table2"
+          data-10999="display: none;"
+          data-11000="display: block; left: 1500px;"
+          data-11200="left: 550px;"
+          data-13500="left: 550px;"
+          data-13700="left: 1500px;"
+          data-13701="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-table3.png" class="PL06-table3"
+          data-10999="display: none;"
+          data-11000="display: block; top: 1500px;"
+          data-11200="top: 400px;"
+          data-13500="top: 400px;"
+          data-13700="top: 1500px;"
+          data-13701="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-clock.png" class="clock"
+          data-10999="display: none;"
+          data-11000="display: block; left: -1000px;"
+          data-11200="left: 420px;"
+          data-15300="opacity: 1;"
+          data-15400="opacity: 0;"
+          data-15401="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-books.png" class="PL06-books"
+          data-10999="display: none;"
+          data-11000="display: block; top: -1000px;"
+          data-11200="top: 145px;"
+          data-15300="opacity: 1;"
+          data-15400="opacity: 0;"
+          data-15401="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-table4.png" class="PL06-table4"
+          data-10999="display: none;"
+          data-11000="display: block; left: -1000px;"
+          data-11200="left: 260px;"
+          data-13500="left: 260px;"
+          data-13700="left: -1000px;"
+          data-13701="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-table5.png" class="PL06-table5"
+          data-10999="display: none;"
+          data-11000="display: block; left: 1500px;"
+          data-11200="left: 600px;"
+          data-13500="left: 600px;"
+          data-13700="left: 1500px;"
+          data-13701="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-hireassoclawyer.png" class="PL06-hireassoclawyer flipInX animated"
+          data-11499="display: none;"
+          data-11500="display: block;"
+          data-12400="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-assoclawyer.png" class="PL06-assoclawyer"
+          data-11699="display: none;"
+          data-11800="display: block; top: -1000px;"
+          data-12100="top: 300px;"
+          data-13500=" top: 300px;"
+          data-13700="top: -1000px;"
+          data-13701="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-hirepersonnel.png" class="PL06-hirepersonnel flipInX animated"
+          data-12399="display: none;"
+          data-12400="display: block;"
+          data-13500="left: 530px;"
+          data-13700="left: 1500px;"
+          data-13701="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-secretary.png" class="PL06-secretary"
+          data-12799="display: none;"
+          data-12800="display: block; left: -1000px;"
+          data-13000="display: block; left: 180px;"
+          data-13500="display: block; left: 180px;"
+          data-13700="display: block; left: -1000px;"
+          data-13701="display: none;">
+          <img src="assets/practicing_lawyer/PL06/PL06-staff.png" class="PL06-staff"
+          data-12799="display: none;"
+          data-12800="display: block; left: 1500px;"
+          data-13000="display: block; left: 670px;"
+          data-13500="display: block; left: 670px;"
+          data-13700="display: block; left: 1500px;"
+          data-13701="display: none;">
+          <img src="assets/practicing_lawyer/PL07/PL07-PLawyer1.png" class="PL07-PLawyer1"
+          data-13999="display: none;"
+          data-14000="display: block; opacity: 0;"
+          data-14100="display: block; opacity: 1;"
+          data-14600="display: none;">
+          <img src="assets/practicing_lawyer/PL07/PL07-Partner1.png" class="PL07-Partner1-1"
+          data-13999="display: none;"
+          data-14000="display: block; opacity: 0;"
+          data-14100="display: block; opacity: 1;"
+          data-14600="display: none;">
+          <img src="assets/practicing_lawyer/PL07/PL07-Partner2.png" class="PL07-Partner2-1"
+          data-14599="display: none;"
+          data-14600="display: block;"
+          data-15300="display: block; opacity: 1;"
+          data-15400="display: block; opacity: 0;"
+          data-15401="display: none;">
+          <img src="assets/practicing_lawyer/PL07/PL07-Client1.png" class="PL07-Client1"
+          data-14599="display: none;"
+          data-14600="display: block;"
+          data-15300="display: block; opacity: 1;"
+          data-15400="display: block; opacity: 0;"
+          data-15401="display: none;">
+          <img src="assets/practicing_lawyer/PL07/PL07-Client2.png" class="PL07-Client2"
+          data-14599="display: none;"
+          data-14600="display: block;"
+          data-15300="display: block; opacity: 1;"
+          data-15400="display: block; opacity: 0;"
+          data-15401="display: none;">
+          <img src="assets/practicing_lawyer/PL07/PL07-GetClients.png" class="PL07-GetClients bounceInDown animated"
+          data-14599="display: none;"
+          data-14600="display: block;"
+          data-15300="display: none;">
+          <img src="assets/practicing_lawyer/PL07/PL07-PLawyer2.png" class="PL07-PLawyer2"
+          data-14599="display: none;"
+          data-14600="display: block;"
+          data-15300="display: block; opacity: 1;"
+          data-15400="display: block; opacity: 0;"
+          data-15401="display: none;">
+          <img src="assets/practicing_lawyer/PL08/PL08-howtomonitor.png" class="PL08-howtomonitor bounceIn animated"
+          data-15399="display: none;"
+          data-15400="display: block;"
+          data-20700="display: none;">
+          <img src="assets/practicing_lawyer/PL08/icon-1.png" class="elaw-icon"
+          data-15699="display: none;"
+          data-15700="display: block; top: 2000px;"
+          data-15900="top: 320px;"
+          data-16300="left: 400px;"
+          data-16500="left: -2000px;"
+          data-16501="display: none;">
+          <img src="assets/practicing_lawyer/PL08/rec-1.png" class="
+          elaw-rec"
+          data-15699="display: none;"
+          data-15700="display: block; left: 2000px;"
+          data-15900="display: block; left: 560px;"
+          data-16300="display: block; left: 560px;"
+          data-16500="display: block; left: -1000px;"
+          data-16501="display: none;">
+          <img src="assets/practicing_lawyer/PL08/icon-2.png" class="elaw-icon"
+          data-16299="display: none;"
+          data-16300="display: block; top: 1000px;"
+          data-16500="top: 320px;"
+          data-16900="left: 400px;"
+          data-17100="left: -2000px;"
+          data-17101="display: none;">
+          <img src="assets/practicing_lawyer/PL08/rec-2.png" class="
+          elaw-rec"
+          data-16299="display: none;"
+          data-16300="display: block; left: 2000px;"
+          data-16500="display: block; left: 560px;"
+          data-16900="display: block; left: 560px;"
+          data-17100="display: block; left: -1000px;"
+          data-17101="display: none;">
+          <img src="assets/practicing_lawyer/PL08/icon-3.png" class="elaw-icon"
+          data-16899="display: none;"
+          data-16900="display: block; top: 1000px;"
+          data-17100="top: 320px;"
+          data-17500="left: 400px;"
+          data-17700="left: -2000px;"
+          data-17701="display: none;">
+          <img src="assets/practicing_lawyer/PL08/rec-3.png" class="
+          elaw-rec"
+          data-16899="display: none;"
+          data-16900="display: block; left: 2000px;"
+          data-17100="display: block; left: 560px;"
+          data-17500="display: block; left: 560px;"
+          data-17700="display: block; left: -1000px;"
+          data-17701="display: none;">
+          <img src="assets/practicing_lawyer/PL08/icon-4.png" class="elaw-icon"
+          data-17499="display: none;"
+          data-17500="display: block; top: 1000px;"
+          data-17700="top: 320px;"
+          data-18100="left: 400px;"
+          data-18300="left: -2000px;"
+          data-18301="display: none;">
+          <img src="assets/practicing_lawyer/PL08/rec-4.png" class="
+          elaw-rec"
+          data-17499="display: none;"
+          data-17500="display: block; left: 2000px;"
+          data-17700="display: block; left: 560px;"
+          data-18100="display: block; left: 560px;"
+          data-18300="display: block; left: -1000px;"
+          data-18301="display: none;">
+          <img src="assets/practicing_lawyer/PL08/icon-5.png" class="elaw-icon"
+          data-18099="display: none;"
+          data-18100="display: block; top: 1000px;"
+          data-18300="top: 320px;"
+          data-18700="left: 400px;"
+          data-18900="left: -2000px;"
+          data-18901="display: none;">
+          <img src="assets/practicing_lawyer/PL08/rec-5.png" class="
+          elaw-rec"
+          data-18099="display: none;"
+          data-18100="display: block; left: 2000px;"
+          data-18300="display: block; left: 560px;"
+          data-18700="display: block; left: 560px;"
+          data-18900="display: block; left: -1000px;"
+          data-18901="display: none;">
+          <img src="assets/practicing_lawyer/PL08/icon-6.png" class="elaw-icon"
+          data-18699="display: none;"
+          data-18700="display: block; top: 1000px;"
+          data-18900="top: 320px;"
+          data-19300="left: 400px;"
+          data-19500="left: -2000px;"
+          data-19501="display: none;">
+          <img src="assets/practicing_lawyer/PL08/rec-6.png" class="
+          elaw-rec"
+          data-18699="display: none;"
+          data-18700="display: block; left: 2000px;"
+          data-18900="display: block; left: 560px;"
+          data-19300="display: block; left: 560px;"
+          data-19500="display: block; left: -1000px;"
+          data-19501="display: none;">
+          <img src="assets/practicing_lawyer/PL08/icon-7.png" class="elaw-icon"
+          data-19299="display: none;"
+          data-19300="display: block; top: 1000px;"
+          data-19500="top: 320px;"
+          data-19900="left: 400px;"
+          data-20100="left: -2000px;"
+          data-20101="display: none;">
+          <img src="assets/practicing_lawyer/PL08/rec-7.png" class="
+          elaw-rec"
+          data-19299="display: none;"
+          data-19300="display: block; left: 2000px;"
+          data-19500="display: block; left: 560px;"
+          data-19900="display: block; left: 560px;"
+          data-20100="display: block; left: -1000px;"
+          data-20101="display: none;">
+          <img src="assets/practicing_lawyer/PL08/icon-8.png" class="elaw-icon"
+          data-19899="display: none;"
+          data-19900="display: block; top: 1000px;"
+          data-20100="top: 320px;"
+          data-20500="left: 400px;"
+          data-20700="left: -2000px;"
+          data-20701="display: none;">
+          <img src="assets/practicing_lawyer/PL08/rec-8.png" class="
+          elaw-rec"
+          data-19899="display: none;"
+          data-19900="display: block; left: 2000px;"
+          data-20100="display: block; left: 560px;"
+          data-20500="display: block; left: 560px;"
+          data-20700="display: block; left: -1000px;"
+          data-20701="display: none;">
+          <img src="assets/practicing_lawyer/PL02/PL02-PLawyer1.png" class="PL02-PLawyer2-1"
+          data-15300="display: block; opacity: 0;"
+          data-15400="display: block; opacity: 1;"
+          data-20700="left: 187px;"
+          data-20900="left: 600px;"
+          data-20901="display: none;">
+          <img src="assets/practicing_lawyer/PL09/PL09-manualsetup.png" class="PL09-manualsetup bounceInDown animated"
+          data-20900="display: none;"
+          data-20901="display: block;"
+          data-25200="display: none;">
+          <img src="assets/practicing_lawyer/PL09/rec-6.png" class="rec-6"
+          data-21299="display: none;"
+          data-21300="display: block; left: 2000px;"
+          data-21600="left: 200px;"
+          data-22100="left: 200px;"
+          data-22200="left: -1000px;"
+          data-22201="display: none;">
+          <img src="assets/practicing_lawyer/PL09/drawer.png" 
+          class="drawer"
+          data-21299="display: none;"
+          data-21300="display: block; left: -1000px; top: 410px;"
+          data-21600="left: 230px;"
+          data-22100="top: 410px;"
+          data-22200="top: 2000px;"
+          data-22201="display: none;">
+          <img src="assets/practicing_lawyer/PL09/papers-1.png" class="papers-1"
+          data-21299="display: none;"
+          data-21300="display: block; top: -1000px;"
+          data-21600="top: 380px;"
+          data-22100="top: 380px;"
+          data-22200="top: 2000px;"
+          data-22201="display: none;">
+          <img src="assets/practicing_lawyer/PL09/rec-7.png" class="rec-7"
+          data-22099="display: none;"
+          data-22100="display: block; left: 2000px;"
+          data-22200="left: 200px;"
+          data-22700="left: 200px;"
+          data-22800="left: -1000px;"
+          data-22801="display: none;">
+          <img src="assets/practicing_lawyer/PL09/icon-1.png" class="eight-slide-icon"
+          data-22099="display: none;"
+          data-22100="display: block; top: 400px; left: -1000px;"
+          data-22200="display: block; left: 140px;"
+          data-22700="left: 140px;"
+          data-22800="display: block; left: 2000px;"
+          data-22801="display: none;">
+          <img src="assets/practicing_lawyer/PL09/icon-2.png" class="eight-slide-icon"
+          data-22099="display: none;"
+          data-22100="display: block; left: 240px; top: 2000px;"
+          data-22200="top: 400px;"
+          data-22700="top: 400px;"
+          data-22800="top: -1000px;"
+          data-22801="display: none;">
+          <img src="assets/practicing_lawyer/PL09/icon-3.png" class="eight-slide-icon"
+          data-22099="display: none;"
+          data-22100="display: block; left: 2000px; top: 400px;"
+          data-22200="left: 340px;"
+          data-22700="left: 340px;"
+          data-22800="left: -1000px;"
+          data-22801="display: none;">
+          <img src="assets/practicing_lawyer/PL09/icon-4.png" class="eight-slide-icon"
+          data-22099="display: none;"
+          data-22100="display: block; top: -1000px; left: 440px;"
+          data-22200="top: 400px;"
+          data-22700="top: 400px;"
+          data-22800="top: 2000px;"
+          data-22801="display: none;">
+          <img src="assets/practicing_lawyer/PL09/rec-8.png" class="rec-8"
+          data-22699="display: none;"
+          data-22700="display: block; left: 2000px;"
+          data-22800="left: 200px;"
+          data-23200="left: 200px;"
+          data-23300="left: -1000px;"
+          data-23301="display: none;">
+          <img src="assets/practicing_lawyer/PL09/lawyers.png" class="lawyers"
+          data-22699="display: none;"
+          data-22700="display: block; top: 370px; left: -1000px;"
+          data-22800="left: 270px;"
+          data-23200="left: 270px;"
+          data-23300="left: 2000px;"
+          data-23301="display: none;">
+          <img src="assets/practicing_lawyer/PL09/rec-9.png" class="rec-9"
+          data-23199="display: none;"
+          data-23200="display: block; left: 2000px;"
+          data-23300="left: 200px;"
+          data-23800="left: 200px;"
+          data-23900="left: -1000px;"
+          data-23901="display: none;">
+          <img src="assets/practicing_lawyer/PL09/drawer-1.png" class="drawer-1"
+          data-23199="display: none;"
+          data-23200="display: block;left: -1000px;"
+          data-23300="left: 220px;"
+          data-23800="left: 220px;"
+          data-23900="left: 2000px;"
+          data-23901="display: none;">
+          <img src="assets/practicing_lawyer/PL09/drawer-2.png" class="drawer-2"
+          data-23199="display: none;"
+          data-23200="display: block; top: 2000px;"
+          data-23300="top: 430px;"
+          data-23800="top: 430px;"
+          data-23900="top: -1000px;"
+          data-23901="display: none;">
+          <img src="assets/practicing_lawyer/PL09/books.png" class="books"
+          data-23199="display: none;"
+          data-23200="display: block; top: -1000px;"
+          data-23300="top: 360px;"
+          data-23800="top: 360px;"
+          data-23900="top: 2000px;"
+          data-23901="display: none;"> 
+          <img src="assets/practicing_lawyer/PL09/rec-10.png" class="rec-9"
+          data-23799="display: none;"
+          data-23800="display: block; left: 2000px;"
+          data-23900="left: 200px;"
+          data-24400="left: 200px;"
+          data-24500="left: -1000px;"
+          data-24501="display: none;">
+          <img src="assets/practicing_lawyer/PL09/emp-logo-1.png" class="emp-logo"
+          data-23799="display: none;"
+          data-23800="display: block; left: -1000px;"
+          data-23900="left: 210px; top: 370px;"
+          data-24400="left: 210px; top: 370px;"
+          data-24500="top: 2000px;"
+          data-24501="display: none;">
+          <img src="assets/practicing_lawyer/PL09/emp-logo-2.png" class="emp-logo"
+          data-23799="display: none;"
+          data-23800="display: block; left: 2000px;"
+          data-23900="left: 335px; top: 370px;"
+          data-24400="top: 370px;"
+          data-24500="display: block; top: 2000px;"
+          data-24501="display: none;">
+          <img src="assets/practicing_lawyer/PL09/rec-11.png" 
+          class="rec-10"
+          data-24399="display: none;"
+          data-24400="display: block; left: 2000px;"
+          data-24500="left: 200px;"
+          data-25000="left: 200px;"
+          data-25100="left: -1000px;"
+          data-25101="display: none;">
+          <img src="assets/practicing_lawyer/PL09/market.png" 
+          class="market"
+          data-24399="display: none;"
+          data-24400="display: block; top: 2000px;"
+          data-24500="top: 370px;"
+          data-25000="top: 370px;"
+          data-25100="display: block; top: -1000px;"
+          data-25101="display: none;">
+          <img src="assets/practicing_lawyer/PL10/PL10-thiswillwork.png" class="PL10-thiswillwork bounceInDown animated"
+          data-25099="display: none;"
+          data-25200="display: block;"
+          data-29201="display: none;">
+          <img src="assets/practicing_lawyer/PL10/rec-11.png" class="rec-11"
+          data-25399="display: none;"
+          data-25400="display: block; left: -1000px;"
+          data-25600="left: 220px;"
+          data-26100="left: 220px;"
+          data-26500="display: block; left: 2000px;"
+          data-26501="display: none;">
+          <img src="assets/practicing_lawyer/PL10/drawer-1.png" class="drawer-1"
+          data-25399="display: none;"
+          data-25400="display: block; left: 240px; top: -1000px;"
+          data-25600="top: 340px;"
+          data-26100="top: 340px;"
+          data-26500="top: 2000px;"
+          data-26501="display: none;">
+          <img src="assets/practicing_lawyer/PL10/books.png" class="books"
+          data-25399="display: none;"
+          data-25400="display: block; top: 350px; left: 2000px;"
+          data-25600="left: 353px;"
+          data-26100="left: 353px;"
+          data-26500="left: 2000px;"
+          data-26501="display: none;">
+          <img src="assets/practicing_lawyer/PL10/drawer-2.png" class="drawer-2"
+          data-25399="display: none;"
+          data-25400="display: block; top: 2000px; left: 358px;"
+          data-25600="top: 420px; "
+          data-26100="left: 358px;"
+          data-26500="left: 2000;"
+          data-26501="display: none;">
+          <img src="assets/practicing_lawyer/PL10/rec-12.png" class="rec-12"
+          data-26099="display: none;"
+          data-26100="display: block; left: -1000px;"
+          data-26500="left: 200px;"
+          data-27000="left: 200px;"
+          data-27400="left: 3000px;"
+          data-27401="display: none;">
+          <img src="assets/practicing_lawyer/PL10/message.png" class="message bounceIn animated"
+          data-26499="display: none;"
+          data-26500="display: block; left: 500px; top: 300px;" 
+          data-27000="left: 500px;"
+          data-27400="left: 2000px;"
+          data-27401="display: none;">
+          <img src="assets/practicing_lawyer/PL10/emp-1.png" class="emp bounceIn animated"
+          data-26499="display: none;"
+          data-26500="display: block; left: 160px; top: 320px;"
+          data-27000="left: 160px;"
+          data-27400="left: -1000px;"
+          data-27401="display: none;">
+          <img src="assets/practicing_lawyer/PL10/emp-2.png" class="emp bounceIn animated"
+          data-26499="display: none;"
+          data-26500="display: block; top: 340px; left: 300px;"
+          data-27000="left: 300px;"
+          data-27400="left: 2500px;"
+          data-27401="display: none;">
+          <img src="assets/practicing_lawyer/PL10/PL10-chatlawyers.png" class="PL10-chatlawyers bounceIn animated"
+          data-26499="display: none;"
+          data-26500="display: block; top: 430px; left: 170px;"
+          data-27000="left: 170px;"
+          data-27400="left: 2500px;"
+          data-27401="display: none;">
+          <img src="assets/practicing_lawyer/PL10/rec-13.png" class="rec-13"
+          data-26999="display: none;"
+          data-27000="display: block; left: -1000px;"
+          data-27400="left: 230px;"
+          data-27900="left: 230px;"
+          data-28300="left: 2000px;"
+          data-28301="display: none;">
+          <img src="assets/practicing_lawyer/PL10/icon-1.png" class="eight-slide-icon"
+          data-26999="display: none;"
+          data-27000="display: block; top: 340px; left: -1000px;"
+          data-27400="left: 200px;"
+          data-27900="left: 200px;"
+          data-28300="left: -1000px;"
+          data-28301="display: none;">
+          <img src="assets/practicing_lawyer/PL10/icon-2.png" class="eight-slide-icon"
+          data-26999="display: none;"
+          data-27000="display: block; top: 340px; left: 2000px;"
+          data-27400="left: 330px;"
+          data-27900="left: 330px;"
+          data-28300="left: 2000px;"
+          data-28301="display: none;">
+          <img src="assets/practicing_lawyer/PL10/icon-3.png" class="eight-slide-icon"
+          data-26999="display: none;"
+          data-27000="display: block; top: 2000px; left: 200px;"
+          data-27400="top: 450px;"
+          data-27900="top: 450px;"
+          data-28300="top: 2000px;"
+          data-28301="display: none;">
+          <img src="assets/practicing_lawyer/PL10/icon-4.png" class="eight-slide-icon"
+          data-26999="display: none;"
+          data-27000="display: block; top: 2000px; left: 330px;"
+          data-27400="top: 450px;"
+          data-27900="top: 450px;"
+          data-28300="top: 2000px;"
+          data-28301="display: none;">
+          <img src="assets/practicing_lawyer/PL10/icon-5.png" class="eight-slide-icon"
+          data-26999="display: none;"
+          data-27000="display: block; top: -1000px; left: 265px;"
+          data-27400="top: 390px;"
+          data-27900="left: 265px;"
+          data-28300="left: -1000px;"
+          data-28301="display: none;">
+          <img src="assets/practicing_lawyer/PL10/icon-6.png" class="eight-slide-icon"
+          data-26999="display: none;"
+          data-27000="display: block; top: 2000px; left: 400px;"
+          data-27400="top: 390px;"
+          data-27900="top: 390px;"
+          data-28300="top: -1000px;"
+          data-28301="display: none;">
+          <img src="assets/practicing_lawyer/PL10/rec-14.png" class="rec-14"
+          data-27899="display: none;"
+          data-27900="display: block; left: -1000px;"
+          data-28300="left: 230px;"
+          data-28800="left: 230px;"
+          data-29200="left: 2000px;"
+          data-29201="display: none;">
+          <img src="assets/practicing_lawyer/PL10/box.png" class="box"
+          data-27899="display: none;"
+          data-27900="display: block; top: -1000px;"
+          data-28300="top: 280px;"
+          data-28800="top: 280px;"
+          data-29200="top: -1000px;"
+          data-29201="display: none;">
+          <img src="assets/practicing_lawyer/PL10/circle.png" class="circle"
+          data-27899="display: none;"
+          data-27900="display: block; left: 2000px;"
+          data-28300="left: 390px;"
+          data-28800="left: 390px;"
+          data-29200="left: 2000px;"
+          data-29201="display: none;">
+          <img src="assets/practicing_lawyer/PL10/money.png" class="money"
+          data-27899="display: none;"
+          data-27900="display: block;  left: -1000px;"
+          data-28300="left: 230px;"
+          data-28800="left: 230px;"
+          data-29200="left: -1000px;"
+          data-29201="display: none;">
+          <img src="assets/practicing_lawyer/PL10/PL10-Lawyer1.png" class="PL10-Lawyer1"
+          data-20900="display: none;"
+          data-20901="display: block; left: 600px;"
+          data-25200="display: none;"
+          data-29201="display: block; left: 600px;"
+          data-29500="display: block; left: 400px;"
+          data-29501="display: none;">
+          <img src="assets/practicing_lawyer/PL10/PL10-Lawyer2.png" class="PL10-Lawyer1"
+          data-25099="display: none; left: 600px;"
+          data-25200="display: block;"
+          data-29201="display: none;"
+          data-29501="display: block; left: 400px;"
+          data-30000="display: block; opacity: 1;"
+          data-30100="display: block; opacity: 0;">
+          <img src="assets/practicing_lawyer/PL11/PL11-solution.png" class="PL11-solution bounceIn animated"
+          data-29500="display: none;"
+          data-29501="display: block;"
+          data-30000="display: none;">
+          <div class="video-background bounceIn animated"
+          data-30099="display: none;"
+          data-30100="display: block; top: 30px;"
+          data-31000="top: 30px;"
+          data-31200="top: -1000px;"
+          data-31201="display: none;">
+            <div id="player"></div>
+          </div>
+          <div class="form bounceIn animated"
+          data-31198="display: none;"
+          data-31199="display: block;"
+          data-31399="display: block;">
+            <img src="assets/Signup.png" class="trial">
+            <iframe
+            scrolling="no"
+            id="form-frame"
+            class="form-frame" 
+            src="main-form.html" 
+            width="100%"
+            height="650px" 
+            style="border: none;">
+            </iframe>
+            <a href="pl-form.html" id="link-to-form">
+              <img src="assets/Clickhere_button.png" class="trial-mobile">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog pop-up" role="document">
+      <div class="modal-content pop-up-content">
+        <div class="modal-body">
+          <img src="assets/new_lawyer/twelveth-slide/y-rec-2.png" class="y-rec-2 bounceIn animated">
+            <a href="index.html">
+              <img src="assets/new_lawyer/twelveth-slide/backtotop.png" class="backtotop bounceIn animated">
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="termsofservice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog pop-up" role="document">
+        <div class="modal-content pop-up-content-2">
+          <div class="modal-body">
+            <div class="form-2 bounceIn animated">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/new_lawyer/twelveth-slide/close-form.png" class="close-form"></button>
+            <iframe class="scroll-pane" 
+            scrolling="no"
+            width="100%" 
+            height="100%" 
+            src="termsandprivacy.html"
+            style="border: none;">
+            </iframe>
+            <div style="display: none;">
+              <input type="radio" id="radio-terms" name="radio-terms" value="accept"
+              class="accept"> <span class="terms-label"> Accept </span>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" id="radio-terms" name="radio-terms" value="reject"
+              class="reject"> <span class="terms-label">  Reject </span> 
+              <button id="btn-terms-submit" type="submit" class="submit-button-terms"  class="btn btn-default pull-right"> Submit
+              </button>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="reject" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog pop-up" role="document">
+      <div class="modal-content pop-up-content">
+        <div class="modal-body">
+          <img src="assets/reject-message.png" class="y-rec-2 bounceIn animated">
+            <a href="index.html">
+              <img src="assets/new_lawyer/twelveth-slide/backtotop.png" class="backtotop bounceIn animated">
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id="choose" class="modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog pop-up" role="document">
+        <div class="modal-content pop-up-content-3">
+            <div class="modal-body">
+              <div class="form-3 bounceInDown animated">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/new_lawyer/twelveth-slide/close-form.png" class="close-form"></button>
+                <div class="choose-alert" style="background-color: #fff;">
+                  <p> Please <b> “Accept” </b> the <b> Terms of Use and Privacy Policy </b> to get your <b> 30-Day Trial Account.</b></p>
+                  <div class="btn-to-right">
+                    <button data-dismiss="modal" aria-label="Close" type="submit" class="alert-ok-btn"  class="btn btn-default pull-right">
+                    </button>
+                  </div>
+                </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/next-pl.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/jquery-touch.js"></script>
+    <script src="js/practicinglawyer.js"></script>
+    <script src="js/default.js"></script>
+    <script src="js/smoothscrolling.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/skrollr.ie.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      function submitTerms() {
+        $('#btn-terms-submit').click();}
+      function Accept() {
+        $('.accept').click();}
+      function Reject() {
+        $('.reject').click();}
+      function openTerms() {
+        $('#termsofservice').modal('show');}
+      function closeTerms() {
+        $('#termsofservice').modal('hide');}
+      function openThankYouModal() {
+        $('#thankyou').modal('show');}
+      function writeToFrame() {
+      var client_type = "Practicing Lawyer"
+       document.getElementById('form-frame').contentWindow.ClientType(client_type);}
+    </script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+    // Initialise Skrollr
+      skrollr.init({
+        smoothScrolling: true,
+        scale: 2,
+        easing: 'swing'
+      });
+    </script>
+    <!-- Google Analytics -->
+    <script src="js/googleanalytics.js"></script>
+</html>

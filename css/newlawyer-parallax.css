@@ -1,0 +1,472 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+body {
+	font-family: 'Oswald', sans-serif;
+	font-weight:300;
+	font-style:normal;
+	width:100%;
+	height:100%;
+}
+* { 
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+#skrollr-body {
+	width:100%;
+	height:100%;
+}
+.scene {
+	position:fixed;
+	width:100%;
+	height:100%
+}
+.container {
+	width: 1000px;
+	height: 94%;
+	margin: 0 auto;
+	position:relative;
+}
+.BG-1 {
+	background-color: #1cb9c5;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-texture.png');
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.BG-2 {
+	background-color: #1cb9c5;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-ofc-pattern.png');
+	width: 100%;
+	height: 100%;
+	background-size: 40px;
+	display: block;
+}
+.BG-3 {
+	background-color: #D49000;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-texture.png');
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 100;
+}
+.BG-4 {
+	background-color: #1cb9c5;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-texture.png');
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.tree-watermark {
+	width: 1000px;
+}
+.court {
+	width: 300px;
+	top: 300px;
+}
+.bubble-1 {
+	width: 300px;
+	left: 220px;
+}
+.nl {
+	width: 150px;
+	top: 260px;
+	left: 250px;
+}
+.nl-hands-up {
+	width: 150px;
+	top: 260px;
+	left: 250px;
+}
+.bubble-2 {
+	width: 220px;
+	top: 260px;
+}
+.rec-1 {
+	top: 380px;
+	width: 230px;
+}
+.table-1 {
+	width: 400px;
+	z-index: 111;
+}
+.rec-2 {
+	width: 300px;
+	left: 150px;
+}
+.road {
+	border-top: 30px solid #8a8a8a;
+	background-color: #595959;
+	height: 400px;
+	z-index: 1;
+	width: 10000px;
+	right: -100%;
+	left: -100%;
+}
+.building-transparent {
+	width: 1300px;
+	left: -150px;
+	z-index: -2;
+}
+.building-transparent-1 {
+	width: 1300px;
+	left: -150px;
+	z-index: -1;
+}
+.building-1 {
+	width: 250px;
+}
+.bubble-3 {
+	width: 350px;
+	left: 140px;
+}
+.rec-3 {
+	width: 300px;
+	top: 270px;
+	right: 120px;
+}
+.table-2 {
+	width: 400px;
+	right: 270px;
+	z-index: 222;
+}
+.desk-1 {
+	top: 400px;
+	width: 135px;
+}
+.desk-2 {
+	top: 400px;
+	width: 135px;
+}
+.shelt-1 {
+	width: 320px;
+	top: 240px;
+}
+.clock-1 {
+	width: 100px;
+	left: 440px;
+}
+.rec-4 {
+	width: 230px;
+	top: 190px;
+	right: 190px;
+}
+.emp-1 {
+	width: 165px;
+	top: 390px;
+	z-index: 1;
+}
+
+.emp-2 {
+	width: 165px;
+	top: 390px;
+	z-index: 1;
+}
+.ofc-floor {
+	border-top: 20px solid #897060;
+	background-color: #cbcace;
+	height: 500px;
+	z-index: 0;
+	width: 10000px;
+	right: -100%;
+	left: -100%;
+}
+.office-dec {
+	right: 40px;
+	top:350px;
+}
+.nl-small {
+	width: 100px;
+	right: 230px;
+	top: 440px;
+	z-index: 0;
+}
+.nl-shake-hands {
+	top: 280px;
+	width: 200px;
+	left: 100px;
+}
+.client-1 {
+	top: 280px;
+	width: 200px;
+	z-index: 222;
+}
+.rec-5 {
+	width: 250px;
+	left: 160px;
+	top: 190px;
+}
+.bubble-4 {
+	width: 500px;
+	top: 100px;
+	left: 200px;
+}
+.elaw-icon {
+	width: 160px;
+	left: 400px;
+}
+.elaw-rec {
+	width: 230px;
+	top: 380px;
+}
+.nl-sideview {
+	top: 280px;
+	width: 200px;
+}
+.y-rec-1 {
+	width: 390px;
+	top: 70px;
+	left: 100px;
+}
+.rec-6 {
+	top: 280px;
+	width: 300px;
+}
+.drawer {
+	width: 280px;
+}
+.papers-1 {
+	left: 260px;
+	width: 240px;
+}
+.rec-7 {
+	top: 280px;
+	width: 300px;
+}
+.eight-slide-icon {
+	width: 110px;
+}
+.rec-8 {
+	top: 280px;
+	width: 300px;
+}
+.drawer-1 {
+	top: 390px;
+	width: 140px;
+}
+.drawer-2 {
+	width: 100px;
+	left: 348px;
+}
+.books {
+	width: 90px;
+	left: 353px;
+}
+.rec-9 {
+	top: 280px;
+	width: 300px;
+}
+.emp-logo {
+	width: 140px;
+}
+.rec-10 {
+	top: 280px;
+	width: 300px;
+}
+.market {
+	width: 150px;
+	left: 220px;
+}
+.nl-front {
+	right: 100px;
+	top: 280px;
+	width: 200px;
+}
+.bubble-5 {
+	top: 70px;
+	right: 100px;
+	width: 420px;
+}
+.rec-11 {
+	top: 280px;
+	width: 280px;
+}
+.rec-12 {
+	top: 280px;
+	width: 280px;
+}
+.message {
+	width: 140px;
+}
+.emp {
+	width: 190px;
+}
+.rec-13 {
+	top: 280px;
+	width: 280px;
+}
+.rec-14 {
+	top: 560px;
+	width: 300px;
+}
+.box {
+	left: 280px;
+	width: 170px;
+}
+.circle {
+	width: 120px;
+	top: 405px;
+}
+.money {
+	top: 440px;
+	width: 120px;
+}
+.bubble-6 {
+	width: 350px;
+	top: 180px;
+	left: 230px;
+}
+.video-background {
+	width: 600px;
+	background-image: url('../assets/new_lawyer/eleventh-slide/video-background.png');
+	margin-left: -300px;
+	left: 50%;
+	height: 350px;
+	background-size: 100% 100%;
+	padding: 25px;
+}
+.rec-15 {
+	width: 500px;
+	left: 260px;
+}
+.form {
+	background-image: url('../assets/new_lawyer/twelveth-slide/termscondition-background-1.png');
+	background-size: 100% 100%;
+	height: auto;
+	top: 40px;
+	width: 500px;
+	left: 50%;
+	margin-left: -225px;
+	padding: 30px;
+}
+.main-form {
+	margin-top: 20px;
+}
+.main-form-label {
+	font-size: 17px;
+	color: #fff;
+	text-align: left !important;
+}
+.main-form-input, .main-form-text-area {
+	border-radius: 0px !important;
+	float: right;
+	border: 5px solid #0F656C;
+	height: 40px;
+	font-size: 17px;
+	font-weight: 800;
+	color: #0F656C;
+}
+.form-group {
+	margin-top: 20px;
+}
+.submit-button {
+	padding: 0px !important;
+	border-radius: 0px !important;
+	width: 100px;
+	height: 50px;
+	background-color: transparent !important;
+	border-radius: none !important;
+	background-image: url('../assets/new_lawyer/twelveth-slide/submit-1.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border: 0;
+	float: right;
+}
+.submit-button:hover {
+	background-image: url('../assets/new_lawyer/twelveth-slide/submit.png');
+}
+.terms {
+	text-align: right;
+	font-size: 15px;
+}
+.submit-button {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.submit-button:hover, .submit-button:focus, .submit-button:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.terms-link {
+	color: #0F656C;
+	text-decoration: none !important;
+}
+.terms-modal {
+	min-height: 500px;
+	background-image: url('../assets/new_lawyer/twelveth-slide/termscondition-background-1.png');
+	background-size: 100% 100%;
+	height: auto;
+	top: 50px;
+	width: 530px;
+	padding: 30px;
+	position: relative;
+	margin: auto;
+	z-index: 999;
+}
+.seeelsa {
+	width: 270px;
+  left: 370px;
+}
+.modal {
+	width: 100% !important;
+	padding-right: 0px !important;
+}
+.pop-up {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.pop-up-content {
+  height: auto !important;
+  min-height: 100% !important;
+  border-radius: 0 !important;
+	background-color: #1cb9c5;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-texture.png');
+}
+.modal-header {
+	border-bottom: 0px !important;
+}
+.y-rec-2 {
+	position: absolute;
+	width: 450px;
+	left: 50%;
+	margin-left: -225px;
+	top: 190px;
+}
+.backtotop {
+	position: absolute;
+	width: 250px;
+	left: 50%;
+	margin-left: -125px;
+	top: 380px;
+	cursor: pointer;
+}
+#next {
+	z-index: 999;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	left: 50%;
+	margin-left: -25px;
+	bottom: 30px;
+	background-image: url('../assets/new_lawyer/arrow-1.png');
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+ul {
+	list-style: none;
+}

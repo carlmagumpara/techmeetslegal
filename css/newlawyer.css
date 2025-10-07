@@ -1,0 +1,378 @@
+@font-face {
+	font-family: 'oswald-regular';
+	src: url('../fonts/oswald/Oswald-Regular.ttf');
+}
+@font-face {
+	font-family: 'oswald-bold';
+	src: url('../fonts/oswald/Oswald-Bold.ttf');
+}
+@font-face {
+	font-family: 'oswald-light';
+	src: url('../fonts/oswald/Oswald-Light.ttf');
+}
+body, html {
+	font-family: 'oswald-regular', sans-serif;
+	font-weight:300;
+	font-style:normal;
+	width:100%;
+	height: auto;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+img { 
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+#skrollr-body {
+	width:100%;
+	height:100%;
+}
+.content {
+	width:100%;
+	height:100%;
+	position: fixed;
+}
+.scene {
+	width:100%;
+	height:100%;
+}
+.main-container {
+	width: 1000px !important;
+	height: 100% !important;
+	margin: 0 auto;
+	position: relative;
+}
+.BG-1 {
+	background-color: #1cb9c5;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-texture.png');
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.BG-2 {
+	background-color: #1cb9c5;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-ofc-pattern.png');
+	width: 100%;
+	height: 100%;
+	background-size: 40px;
+	display: block;
+}
+.BG-3 {
+	background-color: #D49000;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-texture.png');
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 100;
+}
+.BG-4 {
+	background-color: #1cb9c5;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-texture.png');
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.tree-watermark {
+	width: 1000px;
+}
+.court {
+	width: 280px;
+	top: 300px;
+}
+.bubble-1 {
+	width: 250px;
+	left: 260px;
+}
+.nl {
+	width: 140px;
+	top: 260px;
+	left: 250px;
+}
+.nl-hands-up {
+	width: 140px;
+	top: 260px;
+	left: 280px;
+}
+.bubble-2 {
+	width: 190px;
+	top: 190px;
+}
+.rec-1 {
+	top: 280px;
+	height: 60px;
+}
+.table-1 {
+	width: 390px;
+	z-index: 111;
+}
+.rec-2 {
+	height: 60px;
+	left: 190px;
+}
+.road {
+	border-top: 30px solid #8a8a8a;
+	background-color: #595959;
+	height: 600px;
+	z-index: 1;
+	width: 10000px;
+	right: -100%;
+	left: -100%;
+}
+.building-transparent {
+	width: 1300px;
+	left: -150px;
+	z-index: -2;
+}
+.building-transparent-1 {
+	width: 1300px;
+	left: -150px;
+	z-index: -1;
+}
+.building-1 {
+	width: 230px;
+}
+.bubble-3 {
+	width: 300px;
+	left: 200px;
+}
+.rec-3 {
+	height: 60px;
+	top: 200px;
+	left: 580px;
+}
+.table-2 {
+	width: 350px;
+	z-index: 222;
+	left: 320px;
+}
+.desk-1 {
+	top: 335px;
+	width: 120px;
+}
+.desk-2 {
+	top: 335px;
+	width: 120px;
+}
+.shelt-1 {
+	width: 280px;
+	top: 170px;
+}
+.clock-1 {
+	width: 80px;
+	left: 400px;
+}
+.rec-4 {
+	height: 60px;
+	top: 130px;
+	right: 190px;
+}
+.emp-1 {
+	width: 145px;
+	top: 330px;
+	z-index: 1;
+}
+
+.emp-2 {
+	width: 145px;
+	top: 330px;
+	z-index: 1;
+}
+.ofc-floor {
+	border-top: 20px solid #897060;
+	background-color: #cbcace;
+	height: 600px;
+	z-index: 0;
+	width: 10000px;
+	right: -100%;
+	left: -100%;
+}
+.office-dec {
+	left: 450px;
+	top: 310px;
+	width: 390px;
+}
+.nl-small {
+	width: 75px;
+	left: 620px;
+	top: 390px;
+	z-index: 0;
+}
+.nl-shake-hands {
+	top: 220px;
+	width: 170px;
+	left: 140px;
+}
+.client-1 {
+	top: 220px;
+	width: 170px;
+	z-index: 222;
+}
+.rec-5 {
+	height: 60px;
+	left: 160px;
+	top: 140px;
+}
+.bubble-4 {
+	width: 380px;
+	top: 130px;
+	left: 220px;
+}
+.elaw-icon {
+	width: 140px;
+	left: 400px;
+}
+.elaw-rec {
+	height: 60px;
+	top: 320px;
+}
+.nl-sideview {
+	top: 220px;
+	width: 170px;
+}
+.y-rec-1 {
+	width: 260px;
+	top: 130px;
+	left: 200px;
+}
+.rec-6 {
+	top: 280px;
+	height: 70px;
+}
+.drawer {
+	width: 180px;
+}
+.papers-1 {
+	left: 260px;
+	width: 150px;
+}
+.rec-7 {
+	top: 280px;
+	height: 70px;
+}
+.eight-slide-icon {
+	width: 100px;
+}
+.rec-8 {
+	top: 250px;
+	height: 70px;
+}
+.drawer-1 {
+	top: 350px;
+	width: 100px;
+}
+.drawer-2 {
+	width: 68px;
+	left: 380px;
+}
+.books {
+	width: 60px;
+	left: 380px;
+}
+.rec-9 {
+	top: 280px;
+	height: 70px;
+}
+.emp-logo {
+	width: 120px;
+}
+.rec-10 {
+	top: 280px;
+	height: 70px;
+}
+.market {
+	width: 130px;
+	left: 270px;
+}
+.nl-front {
+	left: 600px;
+	top: 220px;
+	width: 170px;
+}
+.bubble-5 {
+	top: 130px;
+	left: 200px;
+	width: 380px;
+}
+.rec-11 {
+	top: 250px;
+	height: 70px;
+}
+.rec-12 {
+	top: 250px;
+	height: 70px;
+}
+.message {
+	width: 110px;
+}
+.emp {
+	width: 160px;
+}
+.rec-13 {
+	top: 250px;
+	height: 70px;
+}
+.rec-14 {
+	top: 460px;
+	height: 70px;
+}
+.box {
+	left: 280px;
+	width: 150px;
+}
+.circle {
+	width: 100px;
+	top: 360px;
+}
+.money {
+	top: 370px;
+	width: 120px;
+}
+.bubble-6 {
+	left: 190px;
+	width: 250px;
+	top: 130px;
+}
+.rec-15 {
+	width: 500px;
+	left: 260px;
+	z-index: 0;
+}
+.modal {
+	width: 100% !important;
+	padding-right: 0px !important;
+}
+.pop-up {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.pop-up-content {
+  height: auto !important;
+  min-height: 100% !important;
+  border-radius: 0 !important;
+  background-color: #1cb9c5;
+	background-image: url('../assets/new_lawyer/backgrounds/BG-texture.png');
+}
+.modal-header {
+	border-bottom: 0px;
+}
+.y-rec-2 {
+	position: absolute;
+	width: 450px;
+	left: 50%;
+	margin-left: -225px;
+	top: 190px;
+}
+.backtotop {
+	position: absolute;
+	width: 250px;
+	left: 50%;
+	margin-left: -125px;
+	top: 380px;
+	cursor: pointer;
+}

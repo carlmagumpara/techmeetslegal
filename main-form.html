@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="A smart system that empowers lawyers and law offices to monitor their day-to-day activities.">
+  <meta name="keywords" content="E-Law Solutions,ELSA APP, A smart system that empowers lawyers and law offices to monitor their day-to-day activities.">
+  <meta name="author" content="ELSA DEV, Carl Anthony Oro Magumpara">
+  <link href="css/normalize.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <style type="text/css">
+    @font-face {
+      font-family: 'oswald-regular';
+      src: url('fonts/oswald/Oswald-Regular.ttf');
+    }
+    @font-face {
+      font-family: 'oswald-bold';
+      src: url('fonts/oswald/Oswald-Bold.ttf');
+    }
+    @font-face {
+      font-family: 'oswald-light';
+      src: url('fonts/oswald/Oswald-Light.ttf');
+    }
+    body, html {
+      font-family: 'oswald-regular', sans-serif;
+      background-color: transparent !important;
+      /*background-color: red;*/
+    }
+    .form-wrapper::-webkit-scrollbar{
+      background-color: transparent !important;
+    } 
+    .form-wrapper::-webkit-scrollbar-thumb {
+      background-color: transparent !important;
+    }
+    .form-wrapper::-webkit-scrollbar-thumb:hover {
+      background-color: transparent !important;
+    }
+    .form-wrapper::-webkit-scrollbar-thumb:active {
+      background-color: transparent !important;
+    }
+    .form-wrapper {
+      height: 692px;
+      position: absolute;
+      width: 575px;
+      margin: 0px;
+      padding: 0px;
+      -webkit-overflow-scrolling: touch !important;
+      overflow-y: scroll !important;
+      overflow-x: hidden !important;
+    }
+    .main-form {
+      margin-top: 20px;
+    }
+    .main-form-label {
+      font-size: 21px;
+      color: #fff;
+      text-align: left !important;
+    }
+    .main-form-input, .main-form-text-area {
+      border-radius: 0px !important;
+      float: right;
+      border: 5px solid #0F656C;
+      height: 53px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #0F656C;
+    }
+    .form-group {
+      margin-top: 20px;
+    }
+    .submit-button {
+      padding: 0px !important;
+      border-radius: 0px !important;
+      width: 110px;
+      height: 60px;
+      background-color: transparent !important;
+      border-radius: none !important;
+      background-image: url('assets/new_lawyer/twelveth-slide/submit-1.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 0;
+      float: right;
+      margin-right: 5px;
+    }
+    .submit-button:hover {
+      background-image: url('assets/new_lawyer/twelveth-slide/submit.png');
+    }
+    .submit-button {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+    }
+    .submit-button:hover, .submit-button:focus, .submit-button:active {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+      transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    }
+    .terms {
+      text-align: left;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .error {
+      border: 5px solid #D00000 !important;
+    }
+/*    .help-block {
+      color: #fff;
+      position: absolute;
+      bottom: -30px;
+    }*/
+    .help-block {
+      color: #fff;
+      bottom: 0px !important;
+      margin-bottom: -20px !important;
+    }
+    /*Costumize column for frame*/
+    .col-sm-4 {
+      width: 29% !important;
+      float: left !important;
+      padding-top: 10px;
+    }
+    .col-sm-8 {
+      float: right !important;
+      width: 71% !important;
+    }
+    .col-sm-9 {
+      width: 70% !important;
+      float: left;
+    }
+    .col-sm-3 {
+      float: right;
+      width: 30% !important;
+    }
+</style>
+</head>
+<body>
+  <div class="form-wrapper">
+    <form class="form-horizontal main-form" id="trial-form" autocomplete="off">
+      <input type="hidden" id="client_type" value="">
+        <div class="form-group">
+          <label for="first_name" class="col-sm-4 control-label main-form-label">*First Name</label>
+          <div class="col-sm-8" id="first_name_group" >
+            <input type="text" class="form-control main-form-input" name="First Name" id="first_name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label main-form-label">*Last Name</label>
+          <div class="col-sm-8" id="last_name_group">
+            <input type="text" class="form-control main-form-input" name="Last Name" id="last_name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label main-form-label">*Work E-mail</label>
+          <div class="col-sm-8" id="email_group">
+            <input type="email" class="form-control main-form-input" name="Work E-mail" id="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label main-form-label">*Phone</label>
+          <div class="col-sm-8" id="phone_group">
+            <input type="tel" class="form-control main-form-input" name="Phone" id="phone" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label main-form-label">*Company Name</label>
+          <div class="col-sm-8" id="company_name_group">
+            <input type="text" class="form-control main-form-input" name="Company Name" id="company_name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label main-form-label">*Position</label>
+          <div class="col-sm-8" id="position_group">
+            <input type="text" class="form-control main-form-input" name="Position" id="position">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label main-form-label">Message</label>
+          <div class="col-sm-8">
+            <textarea class="form-control main-form-text-area" name="Message" rows="2" id="message"></textarea>
+          </div>
+        </div>
+      <div class="form-group">
+        <div class="col-sm-9 text-col control-label main-form-label">
+          <p class="terms">
+            By clicking the "Submit" button, you agree to the 30-day trial agreement Terms of Use and Privacy Policy.
+          </p>
+        </div>
+        <div class="col-sm-3 button-col">
+          <button id="main-submit" class="submit-button" type="submit" class="btn btn-default pull-right">
+          </button>
+        </div>
+      </div>
+    </form> 
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.browser.min.js"></script>
+  <script src="js/post.js"></script>
+  <script src="js/frame.js"></script>
+  <script type="text/javascript">
+    function PostData() {
+      post_registration_data(true);
+    }
+    function ClientType(client_type) {
+      document.getElementById('client_type').value = client_type;
+    }
+  </script>
+  <!-- Google Analytics -->
+  <script src="js/googleanalytics.js"></script>
+</body>
+</html>
