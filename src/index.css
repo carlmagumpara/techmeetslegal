@@ -1,0 +1,128 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------ */
+/* Theme tokens (Tailwind v4 CSS-first configuration)                  */
+/* ------------------------------------------------------------------ */
+@theme {
+  --font-oswald: 'oswald-regular', 'Arial Narrow', sans-serif;
+  --font-oswald-light: 'oswald-light', 'Arial Narrow', sans-serif;
+  --font-oswald-bold: 'oswald-bold', 'Arial Narrow', sans-serif;
+
+  --color-brand: #1cb9c5;
+  --color-brand-dark: #0f656c;
+  --color-brand-darker: #0f5165;
+  --color-gold: #e6a500;
+  --color-gold-dark: #d59000;
+  --color-amber-dark: #d49000;
+  --color-ink: #333333;
+}
+
+/* ------------------------------------------------------------------ */
+/* Self-hosted Oswald faces (custom CSS is required for @font-face)    */
+/* ------------------------------------------------------------------ */
+@font-face {
+  font-family: 'oswald-regular';
+  src: url('/fonts/oswald/Oswald-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'oswald-bold';
+  src: url('/fonts/oswald/Oswald-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'oswald-light';
+  src: url('/fonts/oswald/Oswald-Light.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------------ */
+/* Base layer — expressed with Tailwind @apply                         */
+/* ------------------------------------------------------------------ */
+@layer base {
+  html,
+  body,
+  #root {
+    @apply h-full w-full;
+  }
+
+  body {
+    @apply overflow-x-hidden bg-brand font-oswald text-white antialiased;
+  }
+
+  img {
+    @apply max-w-full select-none;
+  }
+
+  button,
+  a {
+    @apply outline-offset-2 focus-visible:outline-2 focus-visible:outline-white;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Specialised entrance animations from the original design.           */
+/* Tailwind handles every layout/color/spacing concern; only the       */
+/* keyframe definitions themselves need custom CSS.                    */
+/* ------------------------------------------------------------------ */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes bounceIn {
+  0% { opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+  20% { transform: scale3d(1.1, 1.1, 1.1); }
+  40% { transform: scale3d(0.9, 0.9, 0.9); }
+  60% { opacity: 1; transform: scale3d(1.03, 1.03, 1.03); }
+  80% { transform: scale3d(0.97, 0.97, 0.97); }
+  100% { opacity: 1; transform: scale3d(1, 1, 1); }
+}
+.bounceIn { animation-name: bounceIn; }
+
+@keyframes bounceInUp {
+  0% { opacity: 0; transform: translate3d(0, 3000px, 0) scaleY(5); }
+  60% { opacity: 1; transform: translate3d(0, -20px, 0) scaleY(0.9); }
+  75% { transform: translate3d(0, 10px, 0) scaleY(0.95); }
+  90% { transform: translate3d(0, -5px, 0) scaleY(0.985); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.bounceInUp { animation-name: bounceInUp; }
+
+@keyframes bounceInDown {
+  0% { opacity: 0; transform: translate3d(0, -3000px, 0) scaleY(5); }
+  60% { opacity: 1; transform: translate3d(0, 25px, 0) scaleY(0.9); }
+  75% { transform: translate3d(0, -10px, 0) scaleY(0.95); }
+  90% { transform: translate3d(0, 5px, 0) scaleY(0.985); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.bounceInDown { animation-name: bounceInDown; }
+
+@keyframes flipInX {
+  0% { transform: perspective(400px) rotate3d(1, 0, 0, 90deg); opacity: 0; }
+  40% { transform: perspective(400px) rotate3d(1, 0, 0, -20deg); }
+  60% { transform: perspective(400px) rotate3d(1, 0, 0, 10deg); opacity: 1; }
+  80% { transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  100% { transform: perspective(400px); }
+}
+.flipInX { backface-visibility: visible !important; animation-name: flipInX; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.fadeIn { animation-name: fadeIn; }
+
+/* ------------------------------------------------------------------ */
+/* Scrollbar overrides for the framed form / terms panes (not          */
+/* expressible with utility classes).                                  */
+/* ------------------------------------------------------------------ */
+.form-wrapper::-webkit-scrollbar,
+.terms-wrapper::-webkit-scrollbar {
+  width: 16px;
+  background-color: transparent;
+}
+.form-wrapper::-webkit-scrollbar-thumb,
+.terms-wrapper::-webkit-scrollbar-thumb {
+  background-color: #115f6c;
+}
