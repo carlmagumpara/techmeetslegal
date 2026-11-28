@@ -1,6 +1,21 @@
 import { useEffect, useRef } from 'react';
 import skrollr from 'skrollr';
 
+// Scene gaps range from ~100px to ~3000px. A flat 1000ms transition makes the
+// short hops crawl while long jumps flash past their keyframes, so scale the
+// duration with distance and clamp it to keep both extremes comfortable.
+const SCROLL_MS_PER_PIXEL = 2;
+const MIN_SCROLL_DURATION = 350;
+const MAX_SCROLL_DURATION = 2500;
+
+function scrollDuration(from, to) {
+  const distance = Math.abs(to - from);
+  return Math.min(
+    MAX_SCROLL_DURATION,
+    Math.max(MIN_SCROLL_DURATION, Math.round(distance * SCROLL_MS_PER_PIXEL)),
+  );
+}
+
 /**
  * Replaces the legacy jQuery skrollr bootstrap and next-*.js files.
  *
@@ -29,8 +44,12 @@ export function useExperience({ scenes, initial, videoRange }) {
 
     const goTo = (index) => {
       if (index < 0 || index >= scenes.length) return;
+      const target = scenes[index];
       sceneRef.current = index;
-      instance.animateTo(scenes[index], { duration: 1000, easing: 'swing' });
+      instance.animateTo(target, {
+        duration: scrollDuration(instance.getScrollTop(), target),
+        easing: 'swing',
+      });
     };
 
     const onClick = (event) => {
