@@ -1,8 +1,15 @@
 # TECHNOLOGY meets LEGAL — React + Vite
 
-A React 19 + Vite single-page application (styled primarily with Tailwind CSS v4) that
-migrates the original static HTML/Bootstrap/jQuery + [skrollr](https://github.com/Prinzhorn/skrollr)
-scrollytelling site. The legacy sources are kept in `legacy/` for reference.
+An interactive scrollytelling site for **ELSA (E-Law Solutions App)**, a web application
+that helps lawyers and law offices manage their day-to-day activities. Visitors choose a
+path — **New Lawyer** or **Practicing Lawyer** — and follow a scroll-driven story showing
+how ELSA fits into their work, from client intake and office collaboration to court visits.
+Each path ends with a 30-day free trial registration form, and the trial agreement, privacy
+policy, terms of use and disclaimer live on a separate page.
+
+The site is a React 19 + Vite single-page app styled with Tailwind CSS v4, using
+[skrollr](https://github.com/Prinzhorn/skrollr) for the scroll animations. It replaces the
+original static HTML/Bootstrap/jQuery site, whose sources are archived in `legacy/`.
 
 ---
 
