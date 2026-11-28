@@ -1,54 +1,118 @@
-# TECHNOLOGY meets LEGAL — React + Vite migration
+# TECHNOLOGY meets LEGAL — React + Vite
 
-The original site was a static HTML/Bootstrap/jQuery scrollytelling experience driven by
-[skrollr](https://github.com/Prinzhorn/skrollr). It is now a React 19 + Vite 8 single-page
-application styled primarily with **Tailwind CSS v4**.
+A React 19 + Vite single-page application (styled primarily with Tailwind CSS v4) that
+migrates the original static HTML/Bootstrap/jQuery + [skrollr](https://github.com/Prinzhorn/skrollr)
+scrollytelling site. The legacy sources are kept in `legacy/` for reference.
 
-## Commands
+---
+
+## Setup
+
+### Prerequisites
+
+- **Node.js** `^20.19.0` or `>=22.12.0` (required by Vite 8)
+- **npm** (ships with Node)
+
+Check your versions with:
 
 ```bash
-npm install
-npm run dev      # development server (http://localhost:5173)
-npm run build    # production bundle in dist/
-npm run preview  # serve the production bundle
+node -v
+npm -v
 ```
 
-## Configuration decisions
+### Install and run locally
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Start the development server
+npm run dev
+```
+
+The dev server listens on port **5173** and binds to all interfaces (`host: true`), so it is
+reachable at `http://localhost:5173` and from other devices on your network. Changes hot-reload
+automatically.
+
+### Build for production
+
+```bash
+npm run build    # outputs the production bundle to dist/
+npm run preview  # serves dist/ locally to verify the production build
+```
+
+`npm run preview` is useful to confirm the built app works before deploying.
+
+### Environment variables
+
+Create a `.env.local` file in the project root to override the trial registration endpoint:
+
+```bash
+VITE_TRIAL_REGISTRATIONS_URL=https://your-endpoint.example/trial_registrations
+```
+
+| Variable | Purpose | Default |
+| --- | --- | --- |
+| `VITE_TRIAL_REGISTRATIONS_URL` | Trial registration POST endpoint | `https://e-lawsolutions.com/trial_registrations` |
+
+If unset, the default endpoint above is used. Restart the dev server after changing env files.
+
+### Deploying
+
+The app uses `react-router-dom` with clean paths, so the host must rewrite unknown paths to
+`index.html` (SPA fallback). Redirects for the original `.html` URLs are handled in-app.
+Build with `npm run build` and deploy the `dist/` directory.
+
+---
+
+## Project structure
+
+```
+src/
+  main.jsx                  App entry point (BrowserRouter + StrictMode)
+  App.jsx                   Route definitions and legacy URL redirects
+  index.css                 Tailwind import, @theme tokens, @font-face, keyframes
+  components/               Shared UI (Header, Loader, forms, modals, notices)
+  hooks/
+    useExperience.js        Initialises/destroys the skrollr instance
+    useTrialFlow.js         Form state, submission and modal handling
+  data/
+    scenes.js               Scroll scene definitions
+    terms.json              Terms and privacy content
+  pages/
+    Home.jsx                 Landing page
+    NewLawyer.jsx           New-lawyer scrollytelling page
+    PracticingLawyer.jsx    Practicing-lawyer scrollytelling page
+    FormPage.jsx            Registration form page
+    TermsPage.jsx           Terms and privacy page
+    generated/              JSX converted from the legacy HTML
+public/                     Images and self-hosted fonts, served at absolute /… paths
+legacy/                     Original HTML/CSS/JS (archived, not served by Vite)
+scripts/convert-pages.mjs   One-off HTML → JSX / CSS → Tailwind migration helper
+```
+
+---
+
+## How it works
 
 | Topic | Decision |
 | --- | --- |
 | Build tool | Vite with `@vitejs/plugin-react`; all pages are JSX (no TypeScript). |
 | Styling | Tailwind CSS v4 via `@tailwindcss/vite`. Layout, spacing, colours, typography, borders, shadows, transitions, hover/focus states and responsive variants are Tailwind utilities in JSX. |
 | Tailwind entry point | `src/index.css` (`@import 'tailwindcss'`), imported once from `src/main.jsx`. Theme fonts/colours are declared with `@theme`. |
-| Bootstrap / normalize / animate.css | Removed from the runtime. Bootstrap utility classes were translated to Tailwind; the five entrance animations live in `src/index.css` as keyframes because Tailwind does not ship them. |
-| Fonts | The three Oswald `.ttf` faces are self-hosted under `public/fonts/` and declared with `@font-face`. This is unavoidable custom CSS. |
-| Scroll animation | `skrollr` is kept as the frame engine. Tailwind cannot interpolate hundreds of scroll keyframes, so the `data-*` frames and the skrollr instance are preserved. `src/hooks/useExperience.js` initialises/destroys it and replaces `next-nl.js` / `next-pl.js` scene navigation. |
-| Legacy markup | The original HTML/CSS/JS sources are archived in `legacy/` for reference and are no longer served by Vite (leaving them in the root made Vite serve them instead of the SPA shell). |
-| Forms | The old iframe + jQuery AJAX flow was replaced by controlled React components (`RegistrationForm`, `useTrialFlow`, `TrialModals`). The same `trial_registrations` endpoint is used; override it with `VITE_TRIAL_REGISTRATIONS_URL`. |
-| Routing | `react-router-dom` with clean paths. Redirects are provided for the original `.html` URLs. The host must rewrite unknown paths to `index.html` for SPA fallback. |
-| Assets | All original images/fonts are in `public/` and referenced with absolute URLs such as `/assets/home/logo.png`, which work in both dev and production builds. |
+| Bootstrap / normalize / animate.css | Removed from the runtime. Bootstrap utility classes were translated to Tailwind; the five entrance animations live in `src/index.css` as keyframes. |
+| Fonts | The three Oswald `.ttf` faces are self-hosted under `public/fonts/` and declared with `@font-face`. |
+| Scroll animation | `skrollr` is kept as the frame engine. The `data-*` frames and skrollr instance are preserved; `src/hooks/useExperience.js` replaces `next-nl.js` / `next-pl.js` scene navigation. |
+| Legacy markup | Original HTML/CSS/JS sources are archived in `legacy/` and are no longer served by Vite. |
+| Forms | The old iframe + jQuery AJAX flow was replaced by controlled React components (`RegistrationForm`, `useTrialFlow`, `TrialModals`), posting to the same `trial_registrations` endpoint. |
+| Assets | Images/fonts are in `public/` and referenced with absolute URLs such as `/assets/home/logo.png`. |
 
-## Remaining custom CSS
+`src/index.css` contains only Tailwind's import and `@theme` tokens, three `@font-face`
+declarations, a small `@layer base` reset (using `@apply`), the original `bounceIn`,
+`bounceInUp`, `bounceInDown`, `flipInX` and `fadeIn` keyframes, and `::-webkit-scrollbar`
+overrides for the terms/form panes. Everything else is Tailwind utilities in JSX under
+`src/pages/generated/`.
 
-`src/index.css` contains only:
-
-1. Tailwind's import and `@theme` tokens.
-2. Three `@font-face` declarations.
-3. A small `@layer base` block (using `@apply`) for document-wide resets.
-4. The original `bounceIn`, `bounceInUp`, `bounceInDown`, `flipInX` and `fadeIn` keyframes.
-5. `::-webkit-scrollbar` overrides for the terms/form panes.
-
-Everything else — including the hundreds of absolutely positioned slide elements — is
-expressed with Tailwind utility classes in the generated JSX under `src/pages/generated/`.
-
-## Migration helper
-
-`scripts/convert-pages.mjs` performed the one-off HTML → JSX and CSS → Tailwind conversion.
-It needs `parse5` and `postcss` installed temporarily (`npm i --no-save parse5 postcss`) and
-is **not** required to build or run the app. The generated files are checked in.
-
-## Environment variables
-
-| Variable | Purpose | Default |
-| --- | --- | --- |
-| `VITE_TRIAL_REGISTRATIONS_URL` | Trial registration POST endpoint | `https://e-lawsolutions.com/trial_registrations` |
+The migration helper `scripts/convert-pages.mjs` is **not** required to build or run the app;
+the generated files are checked in. It only needs `parse5` and `postcss` installed temporarily
+(`npm i --no-save parse5 postcss`) if you want to re-run the conversion.
