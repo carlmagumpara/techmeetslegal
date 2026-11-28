@@ -1,67 +1,15 @@
 # TECHNOLOGY meets LEGAL — React + Vite
 
-A React 19 + Vite single-page application (styled primarily with Tailwind CSS v4) that
-migrates the original static HTML/Bootstrap/jQuery + [skrollr](https://github.com/Prinzhorn/skrollr)
-scrollytelling site. The legacy sources are kept in `legacy/` for reference.
+An interactive scrollytelling site for **ELSA (E-Law Solutions App)**, a web application
+that helps lawyers and law offices manage their day-to-day activities. Visitors choose a
+path — **New Lawyer** or **Practicing Lawyer** — and follow a scroll-driven story showing
+how ELSA fits into their work, from client intake and office collaboration to court visits.
+Each path ends with a 30-day free trial registration form, and the trial agreement, privacy
+policy, terms of use and disclaimer live on a separate page.
 
----
-
-## Setup
-
-### Prerequisites
-
-- **Node.js** `^20.19.0` or `>=22.12.0` (required by Vite 8)
-- **npm** (ships with Node)
-
-Check your versions with:
-
-```bash
-node -v
-npm -v
-```
-
-### Install and run locally
-
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Start the development server
-npm run dev
-```
-
-The dev server listens on port **5173** and binds to all interfaces (`host: true`), so it is
-reachable at `http://localhost:5173` and from other devices on your network. Changes hot-reload
-automatically.
-
-### Build for production
-
-```bash
-npm run build    # outputs the production bundle to dist/
-npm run preview  # serves dist/ locally to verify the production build
-```
-
-`npm run preview` is useful to confirm the built app works before deploying.
-
-### Environment variables
-
-Create a `.env.local` file in the project root to override the trial registration endpoint:
-
-```bash
-VITE_TRIAL_REGISTRATIONS_URL=https://your-endpoint.example/trial_registrations
-```
-
-| Variable | Purpose | Default |
-| --- | --- | --- |
-| `VITE_TRIAL_REGISTRATIONS_URL` | Trial registration POST endpoint | `https://e-lawsolutions.com/trial_registrations` |
-
-If unset, the default endpoint above is used. Restart the dev server after changing env files.
-
-### Deploying
-
-The app uses `react-router-dom` with clean paths, so the host must rewrite unknown paths to
-`index.html` (SPA fallback). Redirects for the original `.html` URLs are handled in-app.
-Build with `npm run build` and deploy the `dist/` directory.
+The site is a React 19 + Vite single-page app styled with Tailwind CSS v4, using
+[skrollr](https://github.com/Prinzhorn/skrollr) for the scroll animations. It replaces the
+original static HTML/Bootstrap/jQuery site, whose sources are archived in `legacy/`.
 
 ---
 
